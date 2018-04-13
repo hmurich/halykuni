@@ -52,6 +52,7 @@
                     <a href="javascript:void(0)" class="nav-link"><i class="fe fe-calendar"></i>Бот</a>
                     <div class="nav-submenu nav">
                         <a href="{{ action('Admin\Bot\BotCatController@getIndex') }}" class="nav-item ">Категории</a>
+                        <a href="{{ action('Admin\Bot\BotInstructionController@getIndex') }}" class="nav-item ">Инструкции</a>
                         <a href="{{ action('Admin\Bot\BotPageTipController@getIndex') }}" class="nav-item ">Подсказки</a>
                     </div>
                 </li>

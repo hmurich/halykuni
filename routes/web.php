@@ -39,6 +39,11 @@ Route::group(['middleware' => ['auth.admin'], 'prefix' => 'adminka'], function (
         Route::post('/cat/alert', 'Admin\Bot\BotCatController@postAlert');
         Route::any('/cat/delete/{id}', 'Admin\Bot\BotCatController@getDelete');
 
+        // bot instruction
+        Route::get('/instruction', 'Admin\Bot\BotInstructionController@getIndex');
+        Route::post('/instruction', 'Admin\Bot\BotInstructionController@postItem');
+        Route::any('/instruction/delete/{id}', 'Admin\Bot\BotInstructionController@getDelete');
+
         // bot page tip
         Route::get('/page-tip', 'Admin\Bot\BotPageTipController@getIndex');
         Route::post('/page-tip', 'Admin\Bot\BotPageTipController@postItem');
