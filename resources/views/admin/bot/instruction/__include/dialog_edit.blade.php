@@ -22,7 +22,7 @@
                         </div>
                         <div class="form-group">
                             <label class="form-label">Тэги(через запятую)</label>
-                            <textarea class="form-control" name='note' required></textarea>
+                            <textarea class="form-control" name='ar_tag' required></textarea>
                         </div>
                     </div>
                 </div>

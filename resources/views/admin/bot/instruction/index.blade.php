@@ -51,8 +51,9 @@
                 <thead>
                     <tr>
                         <th class="w-1">id</th>
-                        <th>Подсказка</th>
                         <th>Категория</th>
+                        <th>Наименование</th>
+                        <th>Тэги</th>
                         <th>Изменен</th>
                         <th>Создан</th>
                         <th class="text-right">
@@ -65,15 +66,17 @@
                     @foreach ($items as $i)
                         <tr>
                             <td><span class="text-muted">{{ $i->id }}</span></td>
-                            <td>{{ $i->note }}</td>
-                            <td>{{ isset($ar_page[$i->page_key]) ? $ar_page[$i->page_key] : 'Нет' }}</td>
+                            <td>{{ isset($ar_cat[$i->cat_id]) ? $ar_cat[$i->cat_id] : 'Не указано' }}</td>
+                            <td>{{ $i->name }}</td>
+                            <td>{{ implode(",", $i->relTags()->pluck('tag')->toArray()) }}</td>
                             <td>{{ $i->created_at }}</td>
                             <td>{{ $i->updated_at }}</td>
                             <td class="text-right">
                                 <a href="javascript:void(0)"
                                     class="btn btn-secondary btn-sm call_dialog_edit"
-                                    data-val-page_key='{{ $i->page_key }}'
-                                    data-val-note='{{ $i->note }}'
+                                    data-val-cat_id='{{ $i->cat_id }}'
+                                    data-val-ar_tag='{{ implode(",", $i->relTags()->pluck('tag')->toArray()) }}'
+                                    data-val-name='{{ $i->name }}'
                                     data-val-id='{{ $i->id }}'>Изменить</a>
                                 <a href="{{ action('Admin\Bot\BotInstructionController@getDelete', $i->id) }}"
                                     class="btn btn-secondary btn-sm">Удалить</a>

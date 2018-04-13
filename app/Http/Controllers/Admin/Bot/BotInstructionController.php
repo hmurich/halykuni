@@ -11,7 +11,7 @@ use App\Model\Bot\BotCat;
 
 class BotInstructionController extends Controller{
     function getIndex (Request $request){
-        $items = BotInstruction::orderBy('note', 'asc');
+        $items = BotInstruction::orderBy('name', 'asc');
 
         if ($request->has('cat_id') && $request->get('cat_id'))
             $items = $items->where('cat_id', $request->get('cat_id'));
@@ -37,9 +37,19 @@ class BotInstructionController extends Controller{
             $item = new BotInstruction();
         }
 
-        $item->page_key = $request->get('page_key');
-        $item->note = $request->get('note');
+        $item->cat_id = $request->get('cat_id');
+        $item->name = $request->get('name');
         $item->save();
+
+        BotInstructionTag::where('insruct_id', $item->id)->delete();
+        $ar_tag = explode(",", $request->ar_tag);
+        foreach ($ar_tag as $k){
+            $el = new BotInstructionTag();
+            $el->insruct_id = $item->id;
+            $el->cat_id = $item->cat_id;
+            $el->tag = $k;
+            $el->save();
+        }
 
         return redirect()->back()->with('success', 'Сохранено');
     }
