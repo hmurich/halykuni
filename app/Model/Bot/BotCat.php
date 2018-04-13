@@ -6,11 +6,11 @@ class BotCat extends Model{
     protected $table = 'bot_cat';
 
     function relDecision(){
-        return $this->hasOne('App\Model\Bot\BotDecision', 'cat_id');
+        return $this->hasOne('App\Model\Bot\BotCatDecision', 'cat_id');
     }
 
     function relAlert(){
-        return $this->hasOne('App\Model\Bot\BotAlert', 'cat_id');
+        return $this->hasOne('App\Model\Bot\BotCatAlert', 'cat_id');
     }
 
 

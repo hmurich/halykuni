@@ -2,8 +2,8 @@
 namespace App\Model\Bot;
 use Illuminate\Database\Eloquent\Model;
 
-class BotAlert extends Model{
-    protected $table = 'bot_alert';
+class BotCatAlert extends Model{
+    protected $table = 'bot_cat_alert';
 
 
 

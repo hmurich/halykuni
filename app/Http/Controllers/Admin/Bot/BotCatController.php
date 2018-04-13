@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 use App\Model\Bot\BotCat;
-use App\Model\Bot\BotDecision;
-use App\Model\Bot\BotAlert;
+use App\Model\Bot\BotCatDecision;
+use App\Model\Bot\BotCatAlert;
 
 class BotCatController extends Controller{
     function getIndex (Request $request){
@@ -49,9 +49,9 @@ class BotCatController extends Controller{
     }
 
     function postDecision(Request $request){
-        $item = BotDecision::find($request->id);
+        $item = BotCatDecision::find($request->id);
         if (!$item){
-            $item = new BotDecision();
+            $item = new BotCatDecision();
             $item->cat_id = $request->get('cat_id');
         }
 
@@ -63,9 +63,9 @@ class BotCatController extends Controller{
     }
 
     function postAlert(Request $request){
-        $item = BotAlert::find($request->id);
+        $item = BotCatAlert::find($request->id);
         if (!$item){
-            $item = new BotAlert();
+            $item = new BotCatAlert();
             $item->cat_id = $request->get('cat_id');
         }
 

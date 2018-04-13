@@ -27,7 +27,7 @@ Route::group(['middleware' => ['auth.admin'], 'prefix' => 'adminka'], function (
         Route::post('/organ', 'Admin\Organ\OrganController@postItem');
         Route::any('/organ/delete/{id}', 'Admin\Organ\OrganController@getDelete');
 
-        
+
     });
 
     //bot routes

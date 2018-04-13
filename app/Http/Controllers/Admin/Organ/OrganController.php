@@ -25,6 +25,7 @@ class OrganController extends Controller{
         $ar['ar_region'] = SysRegion::pluck('name', 'sys_key')->toArray();
         $ar['ar_cat'] = SysCat::pluck('name', 'id')->toArray();
         $ar['ar_manager'] = TopManager::pluck('full_name', 'id')->toArray();
+        
 
         return view('admin.organ.organ.index', $ar);
     }
