@@ -2,6 +2,7 @@
 
 
 Route::get('/', 'IndexController@getIndex');
+Route::get('about', 'IndexController@getAbout');
 
 
 Route::get('login', 'LoginController@getLogin');
@@ -26,8 +27,6 @@ Route::group(['middleware' => ['auth.admin'], 'prefix' => 'adminka'], function (
         Route::get('/organ', 'Admin\Organ\OrganController@getIndex');
         Route::post('/organ', 'Admin\Organ\OrganController@postItem');
         Route::any('/organ/delete/{id}', 'Admin\Organ\OrganController@getDelete');
-
-
     });
 
     //bot routes
@@ -43,6 +42,15 @@ Route::group(['middleware' => ['auth.admin'], 'prefix' => 'adminka'], function (
         Route::get('/instruction', 'Admin\Bot\BotInstructionController@getIndex');
         Route::post('/instruction', 'Admin\Bot\BotInstructionController@postItem');
         Route::any('/instruction/delete/{id}', 'Admin\Bot\BotInstructionController@getDelete');
+
+        // bot instruction constuctor
+        Route::get('/instruction-constuctor/{id}', 'Admin\Bot\BotInstuctionConstructorController@getIndex');
+        Route::post('/instruction-constuctor/quest/add', 'Admin\Bot\BotInstuctionConstructorController@postAddQuestion');
+        Route::post('/instruction-constuctor/quest/delete', 'Admin\Bot\BotInstuctionConstructorController@postDeleteQuestion');
+        Route::post('/instruction-constuctor/tip/add', 'Admin\Bot\BotInstuctionConstructorController@postAddQuestionTip');
+        Route::post('/instruction-constuctor/tip/delete', 'Admin\Bot\BotInstuctionConstructorController@postDeleteQuestionTip');
+        Route::post('/instruction-constuctor/answer/add', 'Admin\Bot\BotInstuctionConstructorController@postAddAnswer');
+        Route::post('/instruction-constuctor/answer/delete', 'Admin\Bot\BotInstuctionConstructorController@postDeleteAnswer');
 
         // bot page tip
         Route::get('/page-tip', 'Admin\Bot\BotPageTipController@getIndex');

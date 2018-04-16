@@ -55,7 +55,6 @@
                         <th>Наименование</th>
                         <th>Тэги</th>
                         <th>Изменен</th>
-                        <th>Создан</th>
                         <th class="text-right">
                             <a href="javascript:void(0)"
                                 class="btn btn-secondary btn-sm call_dialog_edit">Новый</a>
@@ -69,9 +68,10 @@
                             <td>{{ isset($ar_cat[$i->cat_id]) ? $ar_cat[$i->cat_id] : 'Не указано' }}</td>
                             <td>{{ $i->name }}</td>
                             <td>{{ implode(",", $i->relTags()->pluck('tag')->toArray()) }}</td>
-                            <td>{{ $i->created_at }}</td>
                             <td>{{ $i->updated_at }}</td>
                             <td class="text-right">
+                                <a href="{{ action('Admin\Bot\BotInstuctionConstructorController@getIndex', $i->id) }}"
+                                    class="btn btn-secondary btn-sm">конструктор</a>
                                 <a href="javascript:void(0)"
                                     class="btn btn-secondary btn-sm call_dialog_edit"
                                     data-val-cat_id='{{ $i->cat_id }}'

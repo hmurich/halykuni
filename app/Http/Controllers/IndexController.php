@@ -10,7 +10,18 @@ class IndexController extends Controller{
         $ar = array();
         $ar['title'] = 'Главная';
 
-        return view('welcome', $ar);
+        return view('front.index', $ar);
+    }
+
+    function getAjaxOrg(){
+        
+    }
+
+    function getAbout(){
+        $ar = [];
+        $ar['title'] = 'Об организации';
+
+        return view('front.about', $ar);
     }
 
 }
