@@ -9,6 +9,7 @@
         <title> Интерактивная карта общественного контроля </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
 		<link rel="stylesheet" href="/front/css/highlight.css">			<!-- ===This Style sheet for Highlight === -->
 		<link rel="stylesheet" href="/front/css/Pe-icon-7-stroke.css">			<!-- ===This Style sheet for Stoke Icon === -->
@@ -294,7 +295,7 @@
 					<!-- ___Main Content___ -->
 					<div class="main-content wow "style="padding:0">
 						<div class="main-slider">
-							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A758d2c5a33155753f61f8263e6a39e84fd9952575915a6209f307670a228a75f&amp;width=100%25&amp;height=650&amp;lang=ru_RU&amp;scroll=true"></script>
+                            <div id="yandex_map" style="    width: 100%; height: 500px;"></div>
 						</div> <!-- End Main Slider -->
 					</div> <!-- End Main Content -->
 
@@ -311,6 +312,7 @@
 
 
 
+        <script type="text/javascript" src="//api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU" ></script>
 
 
         <script src="/front/js/vendor/jquery.min.js"></script>
@@ -321,6 +323,9 @@
         <script src="/front/js/jquery.meanmenu.min.js"></script>		<!-- ===This Script for Main Menu=== -->
 		<script src="/front/js/jquery.jscroll.js"></script>
 
+        <script src="/front/js/jquery.jscroll.js"></script>
+        <script type="text/javascript" src="{{ URL::asset('front/js/jquery-2.2.3.min.js') }}" ></script>
+        <script type="text/javascript" src="{{ URL::asset('front/js/map.js') }}" ></script>
 		<script>
 			jQuery(document).ready(function($) {
 				jQuery('.category-nav ').meanmenu();

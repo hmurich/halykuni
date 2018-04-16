@@ -5,6 +5,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
+use App\Model\Organization;
+
 class IndexController extends Controller{
     function getIndex (){
         $ar = array();
@@ -14,7 +16,9 @@ class IndexController extends Controller{
     }
 
     function getAjaxOrg(){
-        
+        return response()->json([
+            'items' => Organization::all()
+        ]);
     }
 
     function getAbout(){

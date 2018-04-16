@@ -2,6 +2,7 @@
 
 
 Route::get('/', 'IndexController@getIndex');
+Route::post('org-list', 'IndexController@getAjaxOrg');
 Route::get('about', 'IndexController@getAbout');
 
 
