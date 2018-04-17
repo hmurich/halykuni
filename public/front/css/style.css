@@ -3396,6 +3396,6 @@ a.icon-right {
   -webkit-box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
   -moz-box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
   box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
-  display:none;
+ /* display:none;*/
   padding:20px;
 }
