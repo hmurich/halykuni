@@ -235,7 +235,7 @@ iframe {
 }
 .logo img {
   width: inherit !important;
-  padding: 55px 0px;
+  padding: 50px 0px;
 }
 
 /* 3.2 Left side Menu */
@@ -530,7 +530,7 @@ iframe {
   color: #222222;
   display: inline;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: bold;
   left: 20px;
   position: relative;
   text-transform: uppercase;
@@ -622,6 +622,16 @@ iframe {
   cursor: pointer;
   display: inline-block;
 }
+.login-user p {
+  bottom: 10px;
+  color: #222222;
+  display: inline;
+  font-size: 14px;
+  font-weight: bold;
+  right: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
 .login-user i:hover,
 .login-user i:focus,
 .login-user i.active {background: #ffffff;}
@@ -708,14 +718,14 @@ iframe {
   display: inline-block;
   float: left;
   text-align: center;
-  width: 12.5%;
+  width: 25%;
   position: static;
 }
 .category-nav .mega-menu ul li a {
   position: relative;
   display: block;
-  padding: 25px 0px;
-  font-size: 14px;
+  padding: 24px 0px;
+  font-size: 15px;
   line-height: 20px;
   text-decoration: none;
   color: #222222;
@@ -1485,7 +1495,6 @@ iframe {
   padding: 0px 0 20px;
   position: relative;
   font-family: "Open Sans", sans-serif;
-  float: left;
   width: 100%;
 }
 .custom-select select {font-weight: 400;}
@@ -1793,13 +1802,28 @@ select.form-control {
   box-shadow: none;
   background: url("../images/form-select.png") no-repeat scroll 100% center transparent;
   -moz-appearance: none;
-  padding: 4px 36px 4px 6px;
+ 
 
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
+}
+.filter_rus select{
+  color:white !important;
+}
+.filter_rus option{
+  color:black;
+}
+.checked {
+    color: orange;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
 }
 .form-control:hover,
 .form-control:focus,
@@ -3361,3 +3385,17 @@ a.icon-right {
 }
 .elements.load-more {line-height: 50px;padding: 0;}
 .post-author-left img {margin: 0 auto;}
+
+#advicer{
+  position:absolute;
+  width:400px;
+  height:100%;
+  right: 0;
+  background: white;
+  z-index: 2000;
+  -webkit-box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
+  box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
+  display:none;
+  padding:20px;
+}

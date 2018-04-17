@@ -30,74 +30,66 @@
 		<div class="container-fluid home-1" id="container-full">
 			<div class="row">
 
+				<div id="advicer">
+					<center><span style="font-size:20px;">Ваш ЮрСоветник <i style="font-size:35px; cursor: pointer;" class="pe-7s-close-circle" id="1" onClick="open_advicer();"></i></span></center>
+					<hr>
+
+					<input type="text" class="form-control no-radius" placeholder="Впишите сюда ключевые слова Вашего вопроса">
+								
+									<button class="form-control btn btn-success" onClick="show_inses();">Найти</button>
+
+					<hr>
+
+					<div id="inses" style="display: none;">
+						По Вашему запросу нашлись следующие инструкции: <hr>
+						<a href="#">Пройти медицинское обследование</a>
+						<a href="#">Получить справку об эпид. окружении</a>
+						<a href="#">Получить бесплатную мед. помощь</a>
+						<br><br>
+						Также Вы можете посмотреть <a href="#">ближайшие поликлинники</a>
+					</div>
+
+				</div>
+
 				<!-- ___Start Left Menu___ -->
 				<div class="col-md-2 no-padding wow slideInLeft">
 					<div id="left-sidebar">
 						<div class="sidebar-menu">
 							<div class="logo wow bounceIn" data-wow-delay="1.5s">
-								<a href="index.html"><img src="/front/images/logo.png" alt="HalykUni" /></a>
+								<a href="../"><img src="/front/images/logo.png" alt="HalykUni" /></a>
 							</div>
 							<!-- End Logo -->
 
 
 							<!-- ___Start Latest Post___ -->
-							<div class="latest-post-area toogle-sidebar-sections">
-								<div class="latest-post-head">
-									<a href="#0" class="accordion-toggle">Фильтр <span class="toggle-icon"><i class="fa fa-bars"></i></span></a>
-									<div class="accordion-content">
-										<div class="menu-body">
 
-											  <input type="text" class="form-control" placeholder="Поиск организаций" />
-											  <ul>
-											  <li ><a href="#0" class="accordion-toggle" >Категория <span class="toggle-icon"><i class="fa fa-bars"></i></span></a>
-											  	<div class="accordion-content">
-											  		<div class="menu-body">
-													<ul >
-														<li><a href="#">Медицина</a></li>
-														<li><a href="#">Образование</a></li>
-														</ul>
-										</div>
-												</div>
-												</li>
-											</ul>
+							<span class="accordion-toggle"><b>Школа № 22</b><span class="toggle-icon"><i class="fa fa-info"></i></span></span>
+									<div class="accordion-content">
+										<div style="padding:10px;color:white;font-size:12px;font-weight: lighter;">
+										Коммунальное бюджетное образовательное учреждение "Средняя общеобразовательная школа № 22 г. Астана" - это не просто школа, это дом, в котором одновременно живет, учится и работает более 1100 человек. 
+										<br><br>
+										<b>Рейтинг: </b>
+										<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+									</div>
+										<div class="menu-body">
+											
+										<span class="accordion-toggle">Директор</span>
+
+										<img src="/front/images/director.jpg" style="margin:10px;">
+											<p style="margin:10px;color:white;">Иванов Иван Иванович - 1967 г.р.</p>
+
 										</div><!-- End Latest Post Body -->
 									</div><!-- End According Content -->
-								</div><!-- End Latest Post Head -->
-							</div>
-							<!-- End Latest Post Area -->
+								<!-- End Latest Post Head -->
 
-							<!-- ___Start Menu Area___ -->
-							<div id="menu-area" class="menu-area toogle-sidebar-sections">
-								<div class="menu-head">
-									<a href="#0" class="accordion-toggle">Меню <span class="toggle-icon"><i class="fa fa-bars"></i></span></a>
-									<div class="accordion-content">
-										<div class="menu-body">
-											<ul>
-												<li ><a href="#0">Консультация</a></li>
-												<li><a href="about.html">Помощь</a></li>
-											</ul>
-										</div><!-- End Menu Body -->
-									</div><!-- End According Content -->
-								</div><!-- End Menu Head -->
 							</div>
-							<!-- End Menu Area -->
-
-							<!-- ___Start Menu Area___ -->
-							<div id="menu-area" class="menu-area toogle-sidebar-sections">
-								<div class="menu-head">
-									<a href="#0" class="accordion-toggle">О карте <span class="toggle-icon"><i class="fa fa-bars"></i></span></a>
-									<div class="accordion-content">
-										<div class="menu-body">
-											<ul>
-												<li><a href="about.html">Информация</a></li>
-											</ul>
-										</div><!-- End Menu Body -->
-									</div><!-- End According Content -->
-								</div><!-- End Menu Head -->
-							</div>
-							<!-- End Menu Area -->
-
-						</div><!-- End Sidebar Menu -->
 					</div><!-- End Menu Left -->
 				</div><!-- End Column -->
 				<!-- End Left Menu -->
@@ -106,29 +98,31 @@
 				<div class="col-md-10 no-padding wow  slideInRight">
 
 					<!-- ___Start Top Bar___ -->
-					<div class="top-bar wow slideInDown " data-wow-delay="1.5s">
+					<div class="top-bar">
 						<div class="top-bar-head">
 							<div class="search">
-								<i class="pe-7s-search showSingle" id="1"></i>
-								<p>Ищете что-то?</p>
+								<i class="pe-7s-info showSingle" id="1"></i>
+								<p style="cursor: pointer;" onClick="open_advicer();">Получить консультацию</p>
 							</div>
 							<div class="login-user pull-right showSingle" id="2">
-								<i class="pe-7s-mail"></i>
+								<p>Регистрация/Вход по ЭЦП</p>
+								<i class="pe-7s-user showSingle"></i>
 							</div>
 
-							<div class="login-mail pull-right showSingle" id="3">
-								<i class="pe-7s-user"></i>
-							</div>
 						</div>
 						<!-- End Top Bar Head -->
+
 
 						<!-- ___Start Top Bar Body___ -->
 						<div class="top-bar-body">
 							<div class="search-body targetDiv" id="div1">
-								<p>Поиск </p>
-								<form>
-									<input type="text" class="form-control no-radius" placeholder="Впишите сюда |">
-								</form>
+								<p>Роботизированная система консультаций "ЮрСоветник" </p>
+							
+									<input type="text" class="form-control no-radius" placeholder="Впишите сюда ключевые слова Вашего вопроса">
+
+									<button class="form-control btn btn-success" onClick="open_advicer();">Найти</button>
+
+							
 							</div>
 
 							<!-- ___Start Top Bar Login Body___ -->
@@ -139,12 +133,12 @@
 											<p>Вход</p>
 											<form>
 												<div class="form-group">
-													<input type="text" class="form-control no-radius" placeholder="User Name">
+													<input type="file" class="form-control no-radius" placeholder="Ваша почта">
 												</div>
 												<div class="input-group">
-													<input type="text" class="form-control no-radius" placeholder="Password">
+													<input type="text" class="form-control no-radius" placeholder="Пароль для ЭЦП">
 													<span class="input-group-btn">
-														<button class="btn btn-default" type="button">Войти</button>
+														<button class="btn btn-default" type="button">Войти по ЭЦП</button>
 													</span>
 												</div><!-- Input Group -->
 												<div class="forgot-pass">Забыли <a href="#0">пароль?</a></div>
@@ -154,85 +148,17 @@
 
 									<div class="dashed-divider"></div>
 									<div class="col-md-6">
+										<p><b>Регистрация</b></p>
 										<div class="register">
-											<p>Регистрация</p>
-											<button type="submit" class="btn btn-default form-control no-radius">Зарегистрироваться</button>
+											
+											<button type="submit" class="btn btn-default form-control no-radius">Зарегистрироваться по ЭЦП</button>
 										</div>
 									</div><!-- End Column -->
 								</div><!-- End Row -->
 							</div>
 							<!-- End Top Bar Login Body -->
 
-							<!-- ___Start Mail Body___ -->
-							<div class="mail-body targetDiv" id="div3">
-								<div class="row">
-
-									<!-- ___Start Mail Contact___ -->
-									<div class="col-md-6">
-										<div class="mail-contact">
-											<h4>Контакты</h4>
-											<div class="row">
-												<div class="col-md-3 col-xs-4 no-padding">
-													<p class="address"><strong>Адресс :</strong></p>
-													<p><strong>Почта :</strong> </p>
-													<p><strong>Телефон :</strong> </p>
-												</div>
-												<div class="col-md-9 col-xs-8 no-padding">
-													<p class="address"> 123 Web Street, </p>
-													<p> info@octagon.com</p>
-													<p> +7 755 855 59 96</p>
-												</div>
-											</div>
-										</div><!-- End Mail Contact -->
-									</div><!-- End Column -->
-
-									<div class="dashed-divider"></div>
-									<!-- ___Start Follow Us___ -->
-									<div class="col-md-6">
-										<div class="mail-follow-us">
-											<h4>Социальные сети</h4>
-											<ul>
-												<li>
-													<a href="#0" class="connect-with-us facebook">
-														<i class="fa fa-facebook"></i>
-
-														<div class="plus">
-															<i class="fa fa-plus"></i>
-														</div>
-													</a><!-- End Facebook -->
-												</li>
-												<li>
-													<a href="#0" class="connect-with-us google-plus">
-														<i class="fa fa-google-plus"></i>
-
-														<div class="plus">
-															<i class="fa fa-plus"></i>
-														</div>
-													</a><!-- End Google-plus -->
-												</li>
-												<li>
-													<a href="#0" class="connect-with-us twitter">
-														<i class="fa fa-twitter"></i>
-
-														<div class="plus">
-															<i class="fa fa-plus"></i>
-														</div>
-													</a><!-- End Twitter -->
-												</li>
-												<li>
-													<a href="#0" class="connect-with-us linkedin">
-														<i class="fa fa-linkedin"></i>
-
-														<div class="plus">
-															<i class="fa fa-plus"></i>
-														</div>
-													</a><!-- End Linkedin -->
-												</li>
-											</ul>
-										</div><!-- End Mail Follow us -->
-									</div><!-- End Column -->
-								</div><!-- End Row -->
-							</div><!-- End Mail Body -->
+						
 						</div><!-- End Top Bar Body -->
 					</div>
 					<!-- End Top Bar -->
@@ -242,49 +168,28 @@
 						<div id="mega-menu" class="mega-menu">
 							<ul>
 								<!-- ___Start Category Nav Life Style___ -->
-								<li id="life-style" class="mega-menu-li life-style"><a href="#0">Жалоба</a>
+								<li id="life-style" class="mega-menu-li life-style"><a href="#0">Фото</a>
 
 								</li>
 								<!-- End Category Nav Life Style -->
 
 								<!-- ___Start Category Nav Travel___ -->
-								<li id="travel" class="mega-menu-li travel"><a href="#0">Отзывы</a>
+								<li id="travel" class="mega-menu-li travel"><a href="#0">Контакты</a>
 
 								</li>
 								<!-- End Category Nav Travel -->
 
 								<!-- ___Start Category Nav Coding___ -->
-								<li id="coding" class="mega-menu-li coding"><a href="#0">Обсуждения</a>
+								<li id="coding" class="mega-menu-li coding"><a href="#0">Отзывы</a>
 
 								</li>
 								<!-- End Category Nav Travel -->
 
 								<!-- ___Start Category Nav Music___ -->
-								<li id="music" class="mega-menu-li music"><a href="#0">Новости</a>
+								<li id="music" class="mega-menu-li music"><a href="#0">Рейтинг</a>
 
 								</li>
 								<!-- End Category Nav Music -->
-
-								<!-- ___Start Category Nav Sports___ -->
-								<li id="sports" class="mega-menu-li sports"><a href="#0">Суммы</a>
-
-								</li>
-								<!-- End Category Nav Sports -->
-
-								<!-- ___Start Category Nav Design___ -->
-								<li id="design" class="mega-menu-li design"><a href="#0">ЮрСоветник</a>
-
-								</li>
-								<!-- End Category Nav Design -->
-
-								<!-- ___Start Category Nav Mobile___ -->
-								<li id="mobile" class="mega-menu-li mobile"><a href="#0">Мой город</a>
-
-								</li>
-								<!-- End Category Nav Mobile -->
-
-								<!-- ___Start Category Nav Health___ -->
-								<li class="mega-menu-li health"><a href="#0">Как искать?</a>
 
 						</div>
 					</div>
@@ -293,28 +198,10 @@
 
 					<!-- ___Start About Octagon___ -->
 					<div class="main-content">
-						<div class="row">
+						<div class="row" style="margin-top:-90px;">
 							<div class="col-md-12 w-100">
-								<div class="about">
-									<div class="about-title text-center">
-										<h1>Школа № 22</h1>
-										<p>Школа-лицей № 22	</p>
-									</div><!-- End About title -->
-
-									<!-- ___Start About Content___ -->
-									<div class="about-content">
-										<img class="img-responsive" src="/front/images/about-octagon.jpg" alt="..." />
-											<p>A new theory that could yield more-reliable communication protocols for digital devices has been developed by researchers led by an Indian-origin scientist.Communication protocols for digital devices are very efficient but also very brittle: They require information to be specified in a precise order with a precise number of bits. If sender and receiver - say, a computer and a printer - are off by even a single bit relative to each other, communi cation between them breaks do.<br><br>
-
-											Similarly, the first topic Sudan and his colleagues began investigating is compression, or the minimum number of bits that one device would need to send another in order to convey all the information in a data file.Existing data compression schemes do exploit statistical regularities in data.<br><br>
-
-											Another Chinese smartphone brand, Vivo has launched its product in India Vivo has bought their slimmest smart phone called Vivo X5 Max to the market for a high price tag of Rs 32,980. The Vivo X5 Max measures just 4.75mm thick which makes it slimmer than the Gionee S5.1 which is 5.1mm thick as well as the Oppo R5 which is 4.85mm thick.</p>
-									</div>
-									<!-- End About Content -->
-
-
-								</div>
-								<!-- End About -->
+								
+							
 
 							<!-- ___Start Column___ -->
 							<div class="text-center">
@@ -323,9 +210,9 @@
 												<div role="tabpanel">
 													<!-- Nav Tabs -->
 													<ul class="nav nav-tabs" role="tablist">
-														<li role="presentation" class="active"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab">Диаграмма</a></li>
-														<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">Сумма</a></li>
-														<li role="presentation"><a href="#tag" aria-controls="tag" role="tab" data-toggle="tab">Написать жалобу</a></li>
+														<li role="presentation" class="active"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab">График</a></li>
+														<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">События</a></li>
+														<li role="presentation"><a href="#tag" aria-controls="tag" role="tab" data-toggle="tab">Подать жалобу</a></li>
 													</ul>
 
 													<!-- ___Tab Content___ -->
@@ -348,7 +235,7 @@
 																			</div>
 																			<div class="media-left__bottom">
 																				<p>
-																				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cupiditate laborum, unde dolorum magni ipsa et, distinctio voluptates voluptatem, voluptate esse libero quis nobis voluptatibus officiis nostrum adipisci officia asperiores!</p>
+																				На ремонт придорожного участка сада школы</p>
 																				<a href="">Подробнее</a>
 																			</div>
 
@@ -360,12 +247,12 @@
 																	<div class="media">
 																		<div class="media-body media-left">
 																			<div class="media-left__top">
-																				<h3>Ушло 2 млн тг </h3>
+																				<h3>Первые в рейтинге школ </h3>
 																				<span>Январь 20, 2015</span>
 																			</div>
 																			<div class="media-left__bottom">
 																				<p>
-																				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cupiditate laborum, unde dolorum magni ipsa et, distinctio voluptates voluptatem, voluptate esse libero quis nobis voluptatibus officiis nostrum adipisci officia asperiores!</p>
+																				Наша школа стала первой в рейтинге!</p>
 																				<a href="">Подробнее</a>
 																			</div>
 
@@ -415,7 +302,7 @@
 																					</div>
 
 																					<div class="form-group">
-																						<label for="email">Ваша пчота</label>
+																						<label for="email">Ваша почта</label>
 																						<input type="text" class="form-control" id="email" name="email" >
 																					</div>
 
@@ -423,17 +310,26 @@
 																						<label for="web">Ваш номер</label>
 																						<input type="text" class="form-control" id="web" name="web" >
 																					</div>
+
+																					<div class="form-group">
+																						<label for="web">Прикрепить видео, фото</label>
+																						<input type="file" class="form-control" id="web" name="web" >
+																					</div>
 																				</div><!-- End Column 6 -->
 
 																				<!-- ___Message & Send It___ -->
 																				<div class="col-md-6">
 
 																					<div class="form-group">
-																						<label for="message">Сообщения</label>
+																						<label for="message">Сообщение</label>
 																						<textarea class="form-control" rows="7" id="message" name="message" ></textarea>
 																					</div>
 																					<div class="form-group">
-																						<button type="submit" class="button btn btn-default" >Отправить</button>
+																						<label for="web">Выбрать ЭЦП</label>
+																						<input type="file" class="form-control" id="web" name="web" >
+																					</div>
+																					<div class="form-group">
+																						<button type="submit" class="button btn btn-default" >Отправить используя ЭЦП</button>
 																					</div>
 																				</div><!-- End Column 6 -->
 																			</form><!-- End Form -->
@@ -449,7 +345,7 @@
 																<div class="row">
 																	<div class="col-md-12">
 
-																		<h3 class="map-title">Адрес учережления</h3>
+																		<h3 class="map-title">Адрес учреждения</h3>
 																		<div class="mm-google-map bg-box-shadow common-border">
 																			<div id="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A758d2c5a33155753f61f8263e6a39e84fd9952575915a6209f307670a228a75f&amp;width=100%25&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script></div>
 																		</div>
@@ -463,154 +359,12 @@
 												</div><!-- End Tab Panel -->
 											</div><!-- End Side Tab -->
 
-											<!-- ___Start Sidebar___ -->
-											<div class="sidebar-widget sidebar-about">
-												<h3>Рукаводство</h3>
-												<div class="about-image">
-													<img class="img-responsive" src="/front/images/widget/sidebar-about.jpg" alt="" />
-												</div>
-												<p>Octagon is one of the excellent blog in the World, Because Octogon Have an Uniqe and interesting post. so It give Treat for visiters eyes.</p>
-											</div> <!-- End Side About -->
-
-											<!-- ___Start Sidebar Slider___ -->
-											<div class="sidebar-widget sidebar-slider">
-												<div id="sidebar-slide-post" class="carousel slide" data-ride="carousel">
-													<!-- ___Wrapper for Slides___ -->
-													<div class="carousel-inner" role="listbox">
-														<div class="item active">
-															<img class="img-responsive" src="/front/images/about-octagon.jpg" alt="">
-														</div>
-														<div class="item">
-															<img class="img-responsive" src="/front/images/about-octagon.jpg" alt="">
-														</div>
-														<div class="item">
-															<img class="img-responsive" src="/front/images/about-octagon.jpg" alt="">
-														</div>
-													</div>
-
-													<!-- Controls -->
-													<div class="slider-controls">
-														<a class="left carousel-control" href="#sidebar-slide-post" role="button" data-slide="prev">
-															<i class="fa fa-angle-left"></i>
-														</a>
-														<a class="right carousel-control" href="#sidebar-slide-post" role="button" data-slide="next">
-															<i class="fa fa-angle-right"></i>
-														</a>
-													</div>
-												</div> <!-- End Carousel -->
-											</div> <!-- End Sidebar Slider -->
-
-											<!-- ___Start Archive___ -->
-											<div class="sidebar-widget sidebar-archive">
-												<h3>Архив событии</h3>
-												<div class="custom-select">
-													<select class="form-control no-radius">
-														<option>Выберите месяц</option>
-														<option>Январь</option>
-														<option>Февраль</option>
-														<option>Март</option>
-														<option>Апрель</option>
-														<option>Май</option>
-														<option>Июнь</option>
-														<option>Июль</option>
-														<option>Август</option>
-														<option>Сентябрь</option>
-														<option>Октябрь</option>
-														<option>Ноябрь</option>
-														<option>Декабрь</option>
-													</select>
-												</div>
-												<div class="row">
-													<!-- ___Start Octagon Author___ -->
-													<div class="octagon-author text-center">
-														<div class="col-lg-4 col-md-4 col-sm-4 no-padding">
-															<div class="author-info border-left-one-light">
-															<img class="img-responsive" src="/front/images/authors/author-1.jpg" alt="" />
-															<p class="name">СОбытия 1</p>
-																<p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem officiis ab aut excepturi qui et quam tempora mollitia natus beatae deleniti quod cumque laudantium, dolor hic error nisi ea facere!</p>
-																<a href="#0">Подробнее</a>
-															</div>
-														</div><!-- End Column -->
-
-														<div class="col-lg-4 col-md-4 col-sm-4 no-padding">
-															<div class="author-info">
-															<img class="img-responsive" src="/front/images/authors/author-2.jpg" alt="" />
-															<p class="name">СОбытия 2</p>
-																<p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem officiis ab aut excepturi qui et quam tempora mollitia natus beatae deleniti quod cumque laudantium, dolor hic error nisi ea facere!</p>
-																<a href="#0">Подробнее</a>
-															</div>
-														</div><!-- End Column -->
-
-														<div class="col-lg-4 col-md-4 col-sm-4 no-padding">
-															<div class="author-info">
-															<img class="img-responsive" src="/front/images/authors/author-3.jpg" alt="" />
-															<p class="name">СОбытия 3</p>
-																<p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem officiis ab aut excepturi qui et quam tempora mollitia natus beatae deleniti quod cumque laudantium, dolor hic error nisi ea facere!</p>
-																<a href="#0">Подробнее</a>
-															</div>
-														</div><!-- End Column -->
-													</div><!-- End Octagon Author -->
-											</div>
-											</div><!-- End sidebar-archive-->
-
-
-
-											<!-- ___Start Subscribe___ -->
-											<div class="sidebar-widget sidebar-subscribe">
-												<div class="mail text-center">
-													<i class="pe-7s-mail"></i>
-												</div>
-												<h3>Подписаться на рассылку</h3>
-												<div class="form-group">
-													<input type="text" class="form-control no-radius" placeholder="Ваша почта" />
-
-													<div class="subscribe-btn text-right">
-														<a href="#0">Подписаться</a>
-													</div>
-												</div>
-											</div><!-- End Subscribe -->
 
 								</div> <!-- End Column -->
 							</div><!-- Content -->
 						</div> <!-- End Row -->
 					</div>
-								<!-- ___Start Author___ -->
-								<div class="author">
-									<div class="author-heading">
-										<h2>Новости</h2>
-									</div>
-									<div class="row">
-										<!-- ___Start Octagon Author___ -->
-										<div class="octagon-author text-center">
-											<div class="col-lg-4 col-md-4 col-sm-4 no-padding">
-												<div class="author-info border-left-one-light">
-												<img class="img-responsive" src="/front/images/authors/author-1.jpg" alt="" />
-												<p class="name">Новость 1</p>
-													<p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quia deserunt dolore, illum, iusto, dignissimos omnis aliquam maxime magnam reprehenderit provident! Magni similique, animi modi dolorem quibusdam, sed beatae obcaecati.</p>
-													<a href="#0">Подробнее</a>
-												</div>
-											</div><!-- End Column -->
-
-											<div class="col-lg-4 col-md-4 col-sm-4 no-padding">
-												<div class="author-info border-left-one-light">
-												<img class="img-responsive" src="/front/images/authors/author-1.jpg" alt="" />
-												<p class="name">Новость 1</p>
-													<p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quia deserunt dolore, illum, iusto, dignissimos omnis aliquam maxime magnam reprehenderit provident! Magni similique, animi modi dolorem quibusdam, sed beatae obcaecati.</p>
-													<a href="#0">Подробнее</a>
-												</div>
-											</div><!-- End Column -->
-
-											<div class="col-lg-4 col-md-4 col-sm-4 no-padding">
-												<div class="author-info border-left-one-light">
-												<img class="img-responsive" src="/front/images/authors/author-1.jpg" alt="" />
-												<p class="name">Новость 1</p>
-													<p class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quia deserunt dolore, illum, iusto, dignissimos omnis aliquam maxime magnam reprehenderit provident! Magni similique, animi modi dolorem quibusdam, sed beatae obcaecati.</p>
-													<a href="#0">Подробнее</a>
-												</div>
-											</div><!-- End Column -->
-										</div><!-- End Octagon Author -->
-									</div><!-- End Row -->
-								</div><!-- End Author -->
+								
 							</div>
 							<!-- End Column -->
 
@@ -647,7 +401,7 @@
 												<button class="btn btn-default" type="button">Подписаться</button>
 											</span>
 										</div><!-- /input-group -->
-										<p>Подписаться на новсти учереждения</p>
+										<p>Подписаться на новости учреждения</p>
 									</div>
 								</div>
 								<!-- End Column -->
@@ -683,7 +437,7 @@
 												</li>
 											</ul>
 										</div>
-										<p>Будьте вкурсе всех новостей</p>
+										<p>Будьте в курсе всех новостей</p>
 									</div><!-- End Social Icons -->
 								</div><!-- End Column -->
 							</div><!-- End Row -->
@@ -699,24 +453,31 @@
 			</div><!-- End Row -->
 		</div><!-- End Container -->
 
+		
 
-        <script src="/front/js/vendor/jquery.min.js"></script>
-        <script src="/front/js/scripts.js"></script>				<!-- ===This Script for Custom Script=== -->
+        <script type="text/javascript" src="{{ URL::asset('front/js/jquery-2.2.3.min.js') }}" ></script>
+        
         <script src="/front/js/owl.carousel.min.js"></script>			<!-- ===This Script for Owl Carousel=== -->
         <script src="/front/js/bootstrap.min.js"></script>			<!-- ===This Script for Bootstrap=== -->
-        <script src="/front/js/wow.min.js"></script>				<!-- ===This Script for Wow JS=== -->
         <script src="/front/js/jquery.meanmenu.min.js"></script>		<!-- ===This Script for Main Menu=== -->
 		<script src="/front/js/jquery.jscroll.js"></script>
+		<script src="/front/js/scripts.js"></script>	
 		<script src="/front/js/highcharts.js"></script>
-
-
+        <script src="/front/js/jquery.jscroll.js"></script>
+        <script src="/front/js/hightcharts_custom.js"></script>
 		<script>
 			jQuery(document).ready(function($) {
-				jQuery('.category-nav ').meanmenu();
+				jQuery('.category-nav').meanmenu();
 			});
+
+			function open_advicer(){
+  					$( "#advicer" ).toggle( "slide" );
+			}
+
+			function show_inses(){
+				$( "#inses" ).toggle( "slide" );
+			}
+			
 		</script>
-        <script>
-            new WOW().init();
-        </script>
     </body>
 </html>

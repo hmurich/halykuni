@@ -21,7 +21,9 @@
         <link rel="stylesheet" href="/front/css/bootstrap.min.css">		<!-- ===This Style sheet for Bootstrap classes=== -->
         <link rel="stylesheet" href="/front/css/style.css">				<!-- ===This Style sheet for Styling the full template=== -->
         <link rel="stylesheet" href="/front/css/responsive.css">			<!-- ===This Style sheet for making the template responsive for all devices=== -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="/front/js/vendor/modernizr-2.6.2.min.js"></script>
+
 
     </head>
     <body>
@@ -31,72 +33,89 @@
 		<div class="container-fluid home-1" id="container-full">
 			<div class="row">
 
+				<div id="advicer">
+					<center><span style="font-size:20px;">Ваш ЮрСоветник <i style="font-size:35px; cursor: pointer;" class="pe-7s-close-circle" id="1" onClick="open_advicer();"></i></span></center>
+					<hr>
+
+					<input type="text" class="form-control no-radius" placeholder="Впишите сюда ключевые слова Вашего вопроса">
+
+					<button class="form-control btn btn-success" onClick="show_inses();">Найти</button>
+					<hr>
+
+					<div id="inses" style="display: none;">
+						По Вашему запросу нашлись следующие инструкции: <hr>
+						<a href="#">Пройти медицинское обследование</a>
+						<a href="#">Получить справку об эпид. окружении</a>
+						<a href="#">Получить бесплатную мед. помощь</a>
+						<br><br>
+						Также Вы можете посмотреть <a href="#">ближайшие поликлинники</a>
+					</div>
+
+				</div>
+
 				<!-- ___Start Left Menu___ -->
-				<div class="col-md-2 no-padding wow slideInLeft">
+				<div class="col-md-2 no-padding">
 					<div id="left-sidebar">
 						<div class="sidebar-menu">
-							<div class="logo wow bounceIn" data-wow-delay="1.5s">
-								<a href="index.html"><img src="/front/images/logo.png" alt="HalykUni" /></a>
+							<div class="logo wow bounceIn" data-wow-delay="1.0s">
+								<a href="#"><img src="/front/images/logo.png" alt="HalykUni" /></a>
 							</div>
 							<!-- End Logo -->
 
 
 							<!-- ___Start Latest Post___ -->
-							<div class="latest-post-area toogle-sidebar-sections">
-								<div class="latest-post-head">
-									<a href="#0" class="accordion-toggle">Фильтр <span class="toggle-icon"><i class="fa fa-bars"></i></span></a>
+
+
+									<span class="accordion-toggle">Поиск <span class="toggle-icon"><i class="fa fa-search"></i></span></span>
 									<div class="accordion-content">
 										<div class="menu-body">
 
-											  <input type="text" class="form-control" placeholder="Поиск организаций" />
-											  <ul>
-											  <li ><a href="#0" class="accordion-toggle" >Категория <span class="toggle-icon"><i class="fa fa-bars"></i></span></a>
-											  	<div class="accordion-content">
-											  		<div class="menu-body">
-			                                           <ul >
-    														<li><a href="#">Медицина</a></li>
-    														<li><a href="#">Образование</a></li>
-														</ul>
-			                                         </div>
+											  <input type="text" class="form-control" placeholder="Поиск гос. органов" />
+
+											  <span class="accordion-toggle">По категориям</span>
+
+											  <div class="custom-select filter_rus">
+													<select class="form-control">
+														<option>Выберите</option>
+														<option>Медицина</option>
+														<option>Образование</option>
+														<option>Акиматы</option>
+														<option>ЦОНы</option>
+														<option>Университеты</option>
+													</select>
 												</div>
-												</li>
-											</ul>
+
+											<span class="accordion-toggle">По областям</span>
+
+											  <div class="custom-select filter_rus">
+													<select class="form-control">
+														<option>Выберите</option>
+														<option>Акмолинская</option>
+														<option>Актюбинская</option>
+														<option>Алматинская</option>
+														<option>Атырауская</option>
+														<option>Восточно-Казахстанская</option>
+													</select>
+												</div>
+
+											<span class="accordion-toggle">По рейтингу</span>
+											<br>
+											<div style="margin-left:30px;">
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+											<span class="fa fa-star"></span>
+										</div>
 										</div><!-- End Latest Post Body -->
 									</div><!-- End According Content -->
-								</div><!-- End Latest Post Head -->
-							</div>
+								<!-- End Latest Post Head -->
+
 							<!-- End Latest Post Area -->
 
-							<!-- ___Start Menu Area___ -->
-							<div id="menu-area" class="menu-area toogle-sidebar-sections">
-								<div class="menu-head">
-									<a href="#0" class="accordion-toggle">Меню <span class="toggle-icon"><i class="fa fa-bars"></i></span></a>
-									<div class="accordion-content">
-										<div class="menu-body">
-											<ul>
-												<li ><a href="#0">Консультация</a></li>
-												<li><a href="about.html">Помощь</a></li>
-											</ul>
-										</div><!-- End Menu Body -->
-									</div><!-- End According Content -->
-								</div><!-- End Menu Head -->
-							</div>
-							<!-- End Menu Area -->
-
-							<!-- ___Start Menu Area___ -->
-							<div id="menu-area" class="menu-area toogle-sidebar-sections">
-								<div class="menu-head">
-									<a href="#0" class="accordion-toggle">О карте <span class="toggle-icon"><i class="fa fa-bars"></i></span></a>
-									<div class="accordion-content">
-										<div class="menu-body">
-											<ul>
-												<li><a href="about.html">Информация</a></li>
-											</ul>
-										</div><!-- End Menu Body -->
-									</div><!-- End According Content -->
-								</div><!-- End Menu Head -->
-							</div>
-							<!-- End Menu Area -->
 
 						</div><!-- End Sidebar Menu -->
 					</div><!-- End Menu Left -->
@@ -104,32 +123,32 @@
 				<!-- End Left Menu -->
 
 				<!-- ___Start Column___ -->
-				<div class="col-md-10 no-padding wow  slideInRight">
+				<div class="col-md-10 no-padding">
 
 					<!-- ___Start Top Bar___ -->
-					<div class="top-bar wow slideInDown " data-wow-delay="1.5s">
+					<div class="top-bar">
 						<div class="top-bar-head">
 							<div class="search">
-								<i class="pe-7s-search showSingle" id="1"></i>
-								<p>Ищете что-то?</p>
+								<i class="pe-7s-info showSingle" id="1"></i>
+								<p style="cursor: pointer;" onClick="open_advicer();">Получить консультацию</p>
 							</div>
 							<div class="login-user pull-right showSingle" id="2">
-								<i class="pe-7s-mail"></i>
+								<p>Регистрация/Вход по ЭЦП</p>
+								<i class="pe-7s-user showSingle"></i>
 							</div>
 
-							<div class="login-mail pull-right showSingle" id="3">
-								<i class="pe-7s-user"></i>
-							</div>
 						</div>
 						<!-- End Top Bar Head -->
 
 						<!-- ___Start Top Bar Body___ -->
 						<div class="top-bar-body">
 							<div class="search-body targetDiv" id="div1">
-								<p>Поиск </p>
-								<form>
-									<input type="text" class="form-control no-radius" placeholder="Впишите сюда |">
-								</form>
+								<p>Роботизированная система консультаций "ЮрСоветник" </p>
+
+									<input type="text" class="form-control no-radius" placeholder="Впишите сюда ключевые слова Вашего вопроса">
+
+									<button class="form-control btn btn-success" onClick="open_advicer();">Найти</button>
+
 							</div>
 
 							<!-- ___Start Top Bar Login Body___ -->
@@ -140,12 +159,12 @@
 											<p>Вход</p>
 											<form>
 												<div class="form-group">
-													<input type="text" class="form-control no-radius" placeholder="User Name">
+													<input type="file" class="form-control no-radius" placeholder="Ваша почта">
 												</div>
 												<div class="input-group">
-													<input type="text" class="form-control no-radius" placeholder="Password">
+													<input type="text" class="form-control no-radius" placeholder="Пароль для ЭЦП">
 													<span class="input-group-btn">
-														<button class="btn btn-default" type="button">Войти</button>
+														<button class="btn btn-default" type="button">Войти по ЭЦП</button>
 													</span>
 												</div><!-- Input Group -->
 												<div class="forgot-pass">Забыли <a href="#0">пароль?</a></div>
@@ -155,137 +174,244 @@
 
 									<div class="dashed-divider"></div>
 									<div class="col-md-6">
+										<p><b>Регистрация</b></p>
 										<div class="register">
-											<p>Регистрация</p>
-											<button type="submit" class="btn btn-default form-control no-radius">Зарегистрироваться</button>
+
+											<button type="submit" class="btn btn-default form-control no-radius">Зарегистрироваться по ЭЦП</button>
 										</div>
 									</div><!-- End Column -->
 								</div><!-- End Row -->
 							</div>
 							<!-- End Top Bar Login Body -->
 
-							<!-- ___Start Mail Body___ -->
-							<div class="mail-body targetDiv" id="div3">
-								<div class="row">
 
-									<!-- ___Start Mail Contact___ -->
-									<div class="col-md-6">
-										<div class="mail-contact">
-											<h4>Контакты</h4>
-											<div class="row">
-												<div class="col-md-3 col-xs-4 no-padding">
-													<p class="address"><strong>Адресс :</strong></p>
-													<p><strong>Почта :</strong> </p>
-													<p><strong>Телефон :</strong> </p>
-												</div>
-												<div class="col-md-9 col-xs-8 no-padding">
-													<p class="address"> 123 Web Street, </p>
-													<p> info@octagon.com</p>
-													<p> +7 755 855 59 96</p>
-												</div>
-											</div>
-										</div><!-- End Mail Contact -->
-									</div><!-- End Column -->
-
-									<div class="dashed-divider"></div>
-									<!-- ___Start Follow Us___ -->
-									<div class="col-md-6">
-										<div class="mail-follow-us">
-											<h4>Социальные сети</h4>
-											<ul>
-												<li>
-													<a href="#0" class="connect-with-us facebook">
-														<i class="fa fa-facebook"></i>
-
-														<div class="plus">
-															<i class="fa fa-plus"></i>
-														</div>
-													</a><!-- End Facebook -->
-												</li>
-												<li>
-													<a href="#0" class="connect-with-us google-plus">
-														<i class="fa fa-google-plus"></i>
-
-														<div class="plus">
-															<i class="fa fa-plus"></i>
-														</div>
-													</a><!-- End Google-plus -->
-												</li>
-												<li>
-													<a href="#0" class="connect-with-us twitter">
-														<i class="fa fa-twitter"></i>
-
-														<div class="plus">
-															<i class="fa fa-plus"></i>
-														</div>
-													</a><!-- End Twitter -->
-												</li>
-												<li>
-													<a href="#0" class="connect-with-us linkedin">
-														<i class="fa fa-linkedin"></i>
-
-														<div class="plus">
-															<i class="fa fa-plus"></i>
-														</div>
-													</a><!-- End Linkedin -->
-												</li>
-											</ul>
-										</div><!-- End Mail Follow us -->
-									</div><!-- End Column -->
-								</div><!-- End Row -->
-							</div><!-- End Mail Body -->
 						</div><!-- End Top Bar Body -->
 					</div>
 					<!-- End Top Bar -->
 
 					<!-- ___Start Category Nav___ -->
-					<div class="category-nav wow slideInRight " data-wow-delay="0.5s">
+					<div class="category-nav">
 						<div id="mega-menu" class="mega-menu">
 							<ul>
 								<!-- ___Start Category Nav Life Style___ -->
-								<li id="life-style" class="mega-menu-li life-style"><a href="#0">Жалоба</a>
+								<li id="life-style" class="mega-menu-li life-style">
 
+									<a href="#0"><i class="pe-7s-speaker" style="font-size:25px;"></i> Жалоба</a>
+									<ul>
+										<li>
+											<!-- ___Start Menu Wrapper___ -->
+											<div class="menu-wrapper">
+												<div class="post-tab container-fluid no-padding">
+													<div role="tabpanel">
+														<div class="row margin-zero">
+															<div class="col-md-3 col-sm-3 no-padding">
+																<div class="submenu-lists">
+																	<h4>Что это значит? <i class="fa fa-info"></i></h4>
+																	<!-- ___Nav Tabs___ -->
+																	<div class="nav nav-tabs" role="tablist">
+																		<div class="list active" role="presentation"><a href="#beauty-care" aria-controls="beauty-care" role="tab" data-toggle="tab">Как подать жалобу?</a></div>
+
+																		<div class="list" role="presentation"><a href="#hair-style" aria-controls="hair-style" role="tab" data-toggle="tab">Что нужно знать при подаче?</a></div>
+
+																	</div><!-- End Nav Tab -->
+																</div><!-- End Sub Menu List -->
+															</div><!-- End Column -->
+
+															<div class="col-md-9 col-sm-9">
+																<!-- ___Tab Content___ -->
+																<div class="tab-content">
+
+																	<!-- ___Tab Pane___ -->
+																	<div role="tabpanel" class="tab-pane fade in active" id="beauty-care">
+																		<div class="row">
+																			<div class="col-md-4 col-sm-4  no-padding">
+																				<div class="menu-post">
+																					<div class="post">
+																						<img class="img-responsive" src="images/mm/mm-post-2.jpg" alt="" />
+																						<h3><a href="#0">Если Вы столкнулись с нарушением прав или проявлениями коррупции, можете подать жалобу здесь</a></h3>
+																					</div>
+																				</div><!-- End Menu Post -->
+																			</div>
+																			<div class="col-md-4 col-sm-4  no-padding">
+																				<div class="menu-post">
+																					<div class="post">
+																						<img class="img-responsive" src="images/mm/mm-post-3.jpg" alt="" />
+																						<h3><a href="#0">Для этого найдите государственный орган, в котором Вы столкнулись с данной проблемой</a></h3>
+																					</div>
+																				</div><!-- End Menu Post -->
+																			</div>
+																			<div class="col-md-4 col-sm-4  no-padding">
+																				<div class="menu-post">
+																					<div class="post">
+																						<img class="img-responsive" src="images/mm/mm-post-4.jpg" alt="" />
+																						<h3><a href="#0">В профиле этого органа нажмите на кнопку "Подать жалобу через ЭЦП"</a></h3>
+																					</div>
+																				</div><!-- End Menu Post -->
+																			</div>
+																		</div>
+																	</div><!-- End Tab Panels -->
+
+																	<!-- ___Tab Pane___ -->
+																	<div role="tabpanel" class="tab-pane fade" id="hair-style">
+																		<div class="row">
+																			<div class="col-md-4 col-sm-4  no-padding">
+																				<div class="menu-post">
+																					<div class="post">
+																						<img class="img-responsive" src="images/mm/mm-post-5.jpg" alt="" />
+																						<h3><a href="#0">Для подачи жалобы, Вы должны иметь ЭЦП</a></h3>
+																					</div>
+																				</div><!-- End Menu Post -->
+																			</div>
+																			<div class="col-md-4 col-sm-4  no-padding">
+																				<div class="menu-post">
+																					<div class="post">
+																						<img class="img-responsive" src="images/mm/mm-post-6.jpg" alt="" />
+																						<h3><a href="#0">Ваша жалобы должна быть обоснованной</a></h3>
+																					</div>
+																				</div><!-- End Menu Post -->
+																			</div>
+																			<div class="col-md-4 col-sm-4  no-padding">
+																				<div class="menu-post">
+																					<div class="post">
+																						<img class="img-responsive" src="images/mm/mm-post-7.jpg" alt="" />
+																						<h3><a href="#0">Постарайтесь максимально точно описать Вашу проблему</a></h3>
+																					</div>
+																				</div><!-- End Menu Post -->
+																			</div>
+																		</div>
+																	</div><!-- End Tab Panes -->
+
+
+																</div>
+																<!-- End Tab Content-->
+															</div><!-- End Column -->
+														</div><!-- End Row -->
+													</div><!-- End Tab Panel -->
+												</div><!-- End Post Tab -->
+											</div><!-- End Menu Wrapper -->
+										</li>
+									</ul>
 								</li>
 								<!-- End Category Nav Life Style -->
 
 								<!-- ___Start Category Nav Travel___ -->
-								<li id="travel" class="mega-menu-li travel"><a href="#0">Отзывы</a>
-
-								</li>
-								<!-- End Category Nav Travel -->
-
-								<!-- ___Start Category Nav Coding___ -->
-								<li id="coding" class="mega-menu-li coding"><a href="#0">Обсуждения</a>
+								<li id="travel" class="mega-menu-li travel">
+								 <a href="#0"><i class="pe-7s-share" style="font-size:25px;"></i> Список организаций</a>
 
 								</li>
 								<!-- End Category Nav Travel -->
 
 								<!-- ___Start Category Nav Music___ -->
-								<li id="music" class="mega-menu-li music"><a href="#0">Новости</a>
+								<li id="music" class="mega-menu-li music">
+									<a href="#0"><i class="pe-7s-news-paper" style="font-size:25px;"></i>Новости</a>
 
 								</li>
 								<!-- End Category Nav Music -->
 
 								<!-- ___Start Category Nav Sports___ -->
-								<li id="sports" class="mega-menu-li sports"><a href="#0">Суммы</a>
+								<li id="sports" class="mega-menu-li sports">
+									<a href="#0"><i class="pe-7s-diamond" style="font-size:25px;"></i>О бюджете</a>
+
+									<ul>
+										<li>
+											<!-- ___Start Menu Wrapper___ -->
+											<div class="menu-wrapper">
+												<div class="post-tab container-fluid no-padding">
+													<div role="tabpanel">
+														<div class="row margin-zero">
+															<div class="col-md-3 col-sm-3 no-padding">
+																<div class="submenu-lists">
+																	<h4>Что это значит? <i class="fa fa-info"></i></h4>
+																	<!-- ___Nav Tabs___ -->
+																	<div class="nav nav-tabs" role="tablist">
+																		<div class="list active" role="presentation"><a href="#budzhet-main" aria-controls="beauty-care" role="tab" data-toggle="tab">Информация о бюджете</a></div>
+
+																		<div class="list" role="presentation"><a href="#how-to-use-budzhet" aria-controls="hair-style" role="tab" data-toggle="tab">Смотреть по категориям</a></div>
+
+																	</div><!-- End Nav Tab -->
+																</div><!-- End Sub Menu List -->
+															</div><!-- End Column -->
+
+															<div class="col-md-9 col-sm-9">
+																<!-- ___Tab Content___ -->
+																<div class="tab-content">
+
+																	<!-- ___Tab Pane___ -->
+																	<div role="tabpanel" class="tab-pane fade in active" id="budzhet-main">
+																		<div class="row">
+																			<div class="col-md-4 col-sm-4  no-padding">
+																				<div class="menu-post">
+																					<div class="post">
+																						<img class="img-responsive" src="images/mm/mm-post-2.jpg" alt="" />
+																						<h3><a href="#0">Здесь Вы сможете узнать всю информацию о суммах, выделенных на определенную организацию</a></h3>
+																					</div>
+																				</div><!-- End Menu Post -->
+																			</div>
+																			<div class="col-md-4 col-sm-4  no-padding">
+																				<div class="menu-post">
+																					<div class="post">
+																						<img class="img-responsive" src="images/mm/mm-post-3.jpg" alt="" />
+																						<h3><a href="#0">Для этого найдите государственный орган, который Вас интересует</a></h3>
+																					</div>
+																				</div><!-- End Menu Post -->
+																			</div>
+																			<div class="col-md-4 col-sm-4  no-padding">
+																				<div class="menu-post">
+																					<div class="post">
+																						<img class="img-responsive" src="images/mm/mm-post-4.jpg" alt="" />
+																						<h3><a href="#0">В профиле этого органа Вы сможете увидеть открытую информацию о его бюджете</a></h3>
+																					</div>
+																				</div><!-- End Menu Post -->
+																			</div>
+																		</div>
+																	</div><!-- End Tab Panels -->
+
+																	<!-- ___Tab Pane___ -->
+																	<div role="tabpanel" class="tab-pane fade" id="how-to-use-budzhet">
+																		<div class="row">
+																			<div class="col-md-4 col-sm-4  no-padding">
+																				<div class="menu-post">
+																					<div class="post">
+																						<img class="img-responsive" src="images/mm/mm-post-5.jpg" alt="" />
+																						<h3><a href="#0">Суммы выделенные на строительство дорог</a></h3>
+																						<h3><a href="#0">Суммы выделенные на ремонт школ</a></h3>
+																					</div>
+																				</div><!-- End Menu Post -->
+																			</div>
+																			<div class="col-md-4 col-sm-4  no-padding">
+																				<div class="menu-post">
+																					<div class="post">
+																						<img class="img-responsive" src="images/mm/mm-post-6.jpg" alt="" />
+																						<h3><a href="#0">Суммы выделенные на ремонт поликлинник</a></h3>
+																						<h3><a href="#0">Суммы выделенные на чистоту города</a></h3>
+																					</div>
+																				</div><!-- End Menu Post -->
+																			</div>
+																			<div class="col-md-4 col-sm-4  no-padding">
+																				<div class="menu-post">
+																					<div class="post">
+																						<img class="img-responsive" src="images/mm/mm-post-7.jpg" alt="" />
+																						<h3><a href="#0">Просто выберите нужную категорию!</a></h3>
+																					</div>
+																				</div><!-- End Menu Post -->
+																			</div>
+																		</div>
+																	</div><!-- End Tab Panes -->
+
+
+																</div>
+																<!-- End Tab Content-->
+															</div><!-- End Column -->
+														</div><!-- End Row -->
+													</div><!-- End Tab Panel -->
+												</div><!-- End Post Tab -->
+											</div><!-- End Menu Wrapper -->
+										</li>
+									</ul>
+
 
 								</li>
 								<!-- End Category Nav Sports -->
-
-								<!-- ___Start Category Nav Design___ -->
-								<li id="design" class="mega-menu-li design"><a href="#0">ЮрСоветник</a>
-
-								</li>
-								<!-- End Category Nav Design -->
-
-								<!-- ___Start Category Nav Mobile___ -->
-								<li id="mobile" class="mega-menu-li mobile"><a href="#0">Мой город</a>
-
-								</li>
-								<!-- End Category Nav Mobile -->
-
-								<!-- ___Start Category Nav Health___ -->
-								<li class="mega-menu-li health"><a href="#0">Как искать?</a>
 
 						</div>
 					</div>
@@ -293,7 +419,7 @@
 
 
 					<!-- ___Main Content___ -->
-					<div class="main-content wow "style="padding:0">
+					<div class="main-content" style="padding:0">
 						<div class="main-slider">
                             <div id="yandex_map" style="    width: 100%; height: 500px;"></div>
 						</div> <!-- End Main Slider -->
@@ -314,38 +440,29 @@
 
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
 
+        <script type="text/javascript" src="{{ URL::asset('front/js/jquery-2.2.3.min.js') }}" ></script>
 
-        <script src="/front/js/vendor/jquery.min.js"></script>
-        <script src="/front/js/scripts.js"></script>				<!-- ===This Script for Custom Script=== -->
         <script src="/front/js/owl.carousel.min.js"></script>			<!-- ===This Script for Owl Carousel=== -->
         <script src="/front/js/bootstrap.min.js"></script>			<!-- ===This Script for Bootstrap=== -->
-        <script src="/front/js/wow.min.js"></script>				<!-- ===This Script for Wow JS=== -->
         <script src="/front/js/jquery.meanmenu.min.js"></script>		<!-- ===This Script for Main Menu=== -->
 		<script src="/front/js/jquery.jscroll.js"></script>
-
+		<script src="/front/js/scripts.js"></script>
         <script src="/front/js/jquery.jscroll.js"></script>
-        <script type="text/javascript" src="{{ URL::asset('front/js/jquery-2.2.3.min.js') }}" ></script>
         <script type="text/javascript" src="{{ URL::asset('front/js/map.js') }}" ></script>
 		<script>
 			jQuery(document).ready(function($) {
-				jQuery('.category-nav ').meanmenu();
-
-				  $(".owl-demo").owlCarousel({
-                      navigation : false, // Show next and prev buttons
-                      slideSpeed : 300,
-                      paginationSpeed : 400,
-                      singleItem:true
-                      // "singleItem:true" is a shortcut for:
-                      // items : 1,
-                      // itemsDesktop : false,
-                      // itemsDesktopSmall : false,
-                      // itemsTablet: false,
-                      // itemsMobile : false
-                  });
+				jQuery('.category-nav').meanmenu();
 			});
+
+			function open_advicer(){
+  					$( "#advicer" ).toggle( "slide" );
+			}
+
+
+			function show_inses(){
+				$( "#inses" ).toggle( "slide" );
+			}
+
 		</script>
-        <script>
-            new WOW().init();
-        </script>
     </body>
 </html>
