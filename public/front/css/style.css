@@ -3385,3 +3385,17 @@ a.icon-right {
 }
 .elements.load-more {line-height: 50px;padding: 0;}
 .post-author-left img {margin: 0 auto;}
+
+#advicer{
+  position:absolute;
+  width:400px;
+  height:100%;
+  right: 0;
+  background: white;
+  z-index: 2000;
+  -webkit-box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
+  box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
+  /*display:none;*/
+  padding:20px;
+}

@@ -33,6 +33,16 @@
 		<div class="container-fluid home-1" id="container-full">
 			<div class="row">
 
+				<div id="advicer">
+					<center><span style="font-size:20px;">Ваш ЮрСоветник <i style="font-size:35px; cursor: pointer;" class="pe-7s-close-circle" id="1" onClick="open_advicer();"></i></span></center>
+					<hr>
+
+					<input type="text" class="form-control no-radius" placeholder="Впишите сюда ключевые слова Вашего вопроса">
+								
+									<button class="form-control btn btn-success" onClick="show_inses();">Найти</button>
+
+				</div>
+
 				<!-- ___Start Left Menu___ -->
 				<div class="col-md-2 no-padding">
 					<div id="left-sidebar">
@@ -110,7 +120,7 @@
 						<div class="top-bar-head">
 							<div class="search">
 								<i class="pe-7s-info showSingle" id="1"></i>
-								<p>Получить консультацию</p>
+								<p style="cursor: pointer;" onClick="open_advicer();">Получить консультацию</p>
 							</div>
 							<div class="login-user pull-right showSingle" id="2">
 								<p>Регистрация/Вход по ЭЦП</p>
@@ -124,9 +134,11 @@
 						<div class="top-bar-body">
 							<div class="search-body targetDiv" id="div1">
 								<p>Роботизированная система консультаций "ЮрСоветник" </p>
-								<form>
+								
 									<input type="text" class="form-control no-radius" placeholder="Впишите сюда ключевые слова Вашего вопроса">
-								</form>
+								
+									<button class="form-control btn btn-success" onClick="open_advicer();">Найти</button>
+
 							</div>
 
 							<!-- ___Start Top Bar Login Body___ -->
@@ -431,6 +443,11 @@
 			jQuery(document).ready(function($) {
 				jQuery('.category-nav').meanmenu();
 			});
+
+			function open_advicer(){
+  					$( "#advicer" ).toggle( "slide" );
+			}
+
 		</script>
     </body>
 </html>
