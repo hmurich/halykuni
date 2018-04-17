@@ -312,7 +312,7 @@
 
 
 
-        <script type="text/javascript" src="//api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU" ></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
 
 
         <script src="/front/js/vendor/jquery.min.js"></script>
