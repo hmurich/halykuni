@@ -48,7 +48,7 @@
 						<a href="#">Получить справку об эпид. окружении</a>
 						<a href="#">Получить бесплатную мед. помощь</a>
 						<br><br>
-						Также Вы можете посмотреть <a href="#">ближайшие поликлинники</a>
+						Также Вы можете посмотреть <a href="#"  class="js_show_policlinic">ближайшие поликлинники</a>
 					</div>
 
 				</div>
@@ -422,6 +422,7 @@
 					<div class="main-content" style="padding:0">
 						<div class="main-slider">
                             <div id="yandex_map" style="    width: 100%; height: 500px;"></div>
+                            <div ></div>
 						</div> <!-- End Main Slider -->
 					</div> <!-- End Main Content -->
 
@@ -438,7 +439,7 @@
 
 
 
-        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
+
 
         <script type="text/javascript" src="{{ URL::asset('front/js/jquery-2.2.3.min.js') }}" ></script>
 
@@ -448,6 +449,7 @@
 		<script src="/front/js/jquery.jscroll.js"></script>
 		<script src="/front/js/scripts.js"></script>
         <script src="/front/js/jquery.jscroll.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
         <script type="text/javascript" src="{{ URL::asset('front/js/map.js') }}" ></script>
 		<script>
 			jQuery(document).ready(function($) {

@@ -16,27 +16,15 @@ function init()
     myMap = new ymaps.Map("yandex_map",{
         center: [51.14345176, 71.44592914],
         zoom: 12,
-        behaviors: ["default", "scrollZoom"]
+        balloonPanelMaxMapArea: Infinity,
+        behaviors: ["default", "scrollZoom"],
+        yandexMapDisablePoiInteractivity: true
     },
     {
         balloonMaxWidth: 300
     });
 
-
-    ymaps.geolocation.get({provider:'yandex',mapStateAutoApply:true}).then(function (res) {
-        console.log(res.geoObjects.position);
-        var ar = [parseFloat(res.geoObjects.position[0]), parseFloat(res.geoObjects.position[0])];
-        myPlacemark_2 = new ymaps.Placemark(ar);
-        myPlacemark_2.data = item;
-        myPlacemark_2.events.add('click', function () {
-            console.log(this);
-        });
-
-
-        myMap.geoObjects.add(myPlacemark_2);
-    });
-
-
+    ymaps.panorama.Base.call();
 
     function getPlacemark(){
         $.post( "/org-list", { cat_id:1, city_id: 1}).done(function( data ) {
@@ -57,18 +45,19 @@ function init()
                    '<br/>',
                    'Адрес: 119021, Москва, ул. Льва Толстого, 16',
                    '<br/>',
-                   'Подробнее: <a href="https://company.yandex.ru/">https://company.yandex.ru</a>',
+                   'Подробнее: <a href="/about">перейти</a>',
                    '</address>'
                ].join('')
            }, {
-               preset: 'islands#redDotIcon'
+               preset: 'islands#blueLeisureCircleIcon',
+               balloonPanelMaxMapArea: Infinity
            });
 
-            myPlacemark.data = item;
+            /*myPlacemark.data = item;
             myPlacemark.events.add('click', function () {
 
             });
-
+            */
 
             myMap.geoObjects.add(myPlacemark);
         }
@@ -76,10 +65,5 @@ function init()
 
     getPlacemark();
 
-
-
-
-    myMap.controls.add("zoomControl");
-    myMap.controls.add("mapTools");
-    myMap.controls.add("typeSelector");
+    console.log(myMap.controls);
 }
