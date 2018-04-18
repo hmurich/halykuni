@@ -48,7 +48,7 @@
 						<a href="#">Получить справку об эпид. окружении</a>
 						<a href="#">Получить бесплатную мед. помощь</a>
 						<br><br>
-						Также Вы можете посмотреть <a href="#"  class="js_show_policlinic">ближайшие поликлинники</a>
+						Также Вы можете посмотреть <a href="#"  class="js_show_policlinic js_change_map">ближайшие поликлинники</a>
 					</div>
 
 				</div>
@@ -74,7 +74,7 @@
 
 											  <span class="accordion-toggle">По категориям</span>
 
-											  <div class="custom-select filter_rus">
+											  <div class="custom-select filter_rus js_change_map">
 													<select class="form-control">
 														<option>Выберите</option>
 														<option>Медицина</option>
@@ -88,7 +88,7 @@
 											<span class="accordion-toggle">По областям</span>
 
 											  <div class="custom-select filter_rus">
-													<select class="form-control">
+													<select class="form-control js_change_map">
 														<option>Выберите</option>
 														<option>Акмолинская</option>
 														<option>Актюбинская</option>
@@ -373,8 +373,8 @@
 																				<div class="menu-post">
 																					<div class="post">
 																						<img class="img-responsive" src="images/mm/mm-post-5.jpg" alt="" />
-																						<h3><a href="#0">Суммы выделенные на строительство дорог</a></h3>
-																						<h3><a href="#0">Суммы выделенные на ремонт школ</a></h3>
+																						<h3><a href="#0" class="js_show_map_summ">Суммы выделенные на строительство дорог</a></h3>
+																						<h3><a href="#0" class="js_show_map_summ">Суммы выделенные на ремонт школ</a></h3>
 																					</div>
 																				</div><!-- End Menu Post -->
 																			</div>
@@ -382,8 +382,8 @@
 																				<div class="menu-post">
 																					<div class="post">
 																						<img class="img-responsive" src="images/mm/mm-post-6.jpg" alt="" />
-																						<h3><a href="#0">Суммы выделенные на ремонт поликлинник</a></h3>
-																						<h3><a href="#0">Суммы выделенные на чистоту города</a></h3>
+																						<h3><a href="#0" class="js_show_map_summ">Суммы выделенные на ремонт поликлинник</a></h3>
+																						<h3><a href="#0" class="js_show_map_summ">Суммы выделенные на чистоту города</a></h3>
 																					</div>
 																				</div><!-- End Menu Post -->
 																			</div>
@@ -391,7 +391,7 @@
 																				<div class="menu-post">
 																					<div class="post">
 																						<img class="img-responsive" src="images/mm/mm-post-7.jpg" alt="" />
-																						<h3><a href="#0">Просто выберите нужную категорию!</a></h3>
+																						<h3><a href="#0"  class="js_show_map_summ">Просто выберите нужную категорию!</a></h3>
 																					</div>
 																				</div><!-- End Menu Post -->
 																			</div>
