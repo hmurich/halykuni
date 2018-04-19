@@ -23,6 +23,13 @@ Route::group(['middleware' => ['auth.admin'], 'prefix' => 'adminka'], function (
     Route::post('/top-manager', 'Admin\TopManagerController@postItem');
     Route::any('/top-manager/delete/{id}', 'Admin\TopManagerController@getDelete');
 
+    // report routes
+    Route::group(['prefix' => 'report'], function () {
+        Route::get('/upload', 'Admin\Report\UploadController@getIndex');
+        Route::post('/upload', 'Admin\Report\UploadController@postIndex');
+
+        Route::get('/sample', 'Admin\Report\SampleController@getIndex');
+    });
     // organization routes
     Route::group(['prefix' => 'organ'], function () {
         Route::get('/organ', 'Admin\Organ\OrganController@getIndex');

@@ -22,15 +22,6 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="javascript:void(0)" class="nav-link"><i class="fe fe-server"></i> Склад</a>
-                    <div class="nav-submenu nav">
-                        <a href="{{ action('Admin\IndexController@getIndex') }}" class="nav-item ">Поставшики</a>
-                        <a href="{{ action('Admin\IndexController@getIndex') }}" class="nav-item ">Номенклатура</a>
-                        <a href="{{ action('Admin\IndexController@getIndex') }}" class="nav-item ">Ед. измерения</a>
-                        <a href="{{ action('Admin\IndexController@getIndex') }}" class="nav-item ">Предметы учета</a>
-                    </div>
-                </li>
-                <li class="nav-item">
                     <a href="javascript:void(0)" class="nav-link"><i class="fe fe-user"></i> Контрагенты</a>
                     <div class="nav-submenu nav">
                         <a href="{{ action('Admin\IndexController@getIndex') }}" class="nav-item ">Все</a>
@@ -40,11 +31,18 @@
                 </li>
                 -->
                 <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link"><i class="fe fe-server"></i> Отчеты</a>
+                    <div class="nav-submenu nav">
+                        <a href="{{ action('Admin\Report\UploadController@getIndex') }}" class="nav-item ">Форма загрузки</a>
+                        <a href="{{ action('Admin\Report\SampleController@getIndex') }}" class="nav-item ">Номенклатура</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
                     <a href="javascript:void(0)" class="nav-link"><i class="fe fe-tablet"></i>Модули</a>
                     <div class="nav-submenu nav">
                         <a href="{{ action('Admin\InvestigationController@getIndex') }}" class="nav-item ">Расследования</a>
-                        <a href="{{ action('Admin\TopManagerController@getIndex') }}" class="nav-item ">Директора</a>
-                        <a href="{{ action('Admin\Organ\OrganController@getIndex') }}" class="nav-item ">Организации</a>
+                        <a href="{{ action('Admin\TopManagerController@getIndex') }}" class="nav-item ">Качество гос услуг</a>
                     </div>
                 </li>
 
