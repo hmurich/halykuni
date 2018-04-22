@@ -58,7 +58,7 @@
 					<div id="left-sidebar">
 						<div class="sidebar-menu">
 							<div class="logo wow bounceIn" data-wow-delay="1.0s">
-								<a href="#"><img src="/front/images/elim-ai.png" alt="HalykUni" /></a>
+								<a href="../"><img src="/front/images/elim-ai.png" alt="HalykUni" /></a>
 							</div>
 							<!-- End Logo -->
 
@@ -314,7 +314,7 @@
 
 								<!-- ___Start Category Nav Travel___ -->
 								<li id="travel" class="mega-menu-li travel">
-								 <a href="spisok"><i class="pe-7s-share" style="font-size:25px;"></i> Список организаций</a>
+								 <a href="#0"><i class="pe-7s-share" style="font-size:25px;"></i> Список организаций</a>
 
 								</li>
 								<!-- End Category Nav Travel -->
@@ -438,9 +438,93 @@
 
 					<!-- ___Main Content___ -->
 					<div class="main-content" style="padding:0">
-						<div class="main-slider">
-                            <div id="yandex_map" style="    width: 100%; height: 500px;"></div>
-                            <div ></div>
+						<div class="main-slider" style="padding:40px;">
+							<div class="col-md-12 sidebar-tab">
+												<div role="tabpanel">
+													<!-- Nav Tabs -->
+													<ul class="nav nav-tabs" role="tablist">
+														<li role="presentation" class="active"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab"><font color="green">Список</font></a></li>
+														
+														<li role="presentation"><a href="../">Назад к карте</a></li>
+													</ul>
+
+													<!-- ___Tab Content___ -->
+													<div class="tab-content">
+														<!-- ___Tab Pane Popular___ -->
+														<div role="tabpanel" class="tab-pane fade in active" id="popular">
+															<ul>
+																<li>
+																	<div class="media">
+																		<div class="media-body media-left">
+																			<div class="media-left__top">
+																				<h3>Школа № 22, город Астана</h3>
+																				<span>Образовательное учреждение</span>
+																			</div>
+																			<div class="media-left__bottom">
+																				<p>
+																					КОММУНАЛЬНОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 22 Г. АСТАНА"
+																				</p>
+																				<a href="about">Подробнее</a>
+																			</div>
+
+																		</div>
+																	</div><!-- End Media -->
+																</li>
+
+																<li>
+																	<div class="media">
+																		<div class="media-body media-left">
+																			<div class="media-left__top">
+																				<h3>Школа № 25, город Астана</h3>
+																				<span>Образовательное учреждение</span>
+																			</div>
+																			<div class="media-left__bottom">
+																				<p>
+																					КОММУНАЛЬНОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 22 Г. АСТАНА"
+																				</p>
+																				<a href="about">Подробнее</a>
+																			</div>
+
+																		</div>
+																	</div><!-- End Media -->
+																</li>
+
+																<li>
+																	<div class="media">
+																		<div class="media-body media-left">
+																			<div class="media-left__top">
+																				<h3>Школа № 25, город Астана</h3>
+																				<span>Образовательное учреждение</span>
+																			</div>
+																			<div class="media-left__bottom">
+																				<p>
+																					КОММУНАЛЬНОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 22 Г. АСТАНА"
+																				</p>
+																				<a href="about">Подробнее</a>
+																			</div>
+
+																		</div>
+																	</div><!-- End Media -->
+																</li>
+
+																
+															</ul>
+
+															
+
+
+														</div>
+														<!-- End Tab Pane Popular -->
+
+														
+
+													
+													</div><!-- End Tab Content -->
+												</div><!-- End Tab Panel -->
+											</div><!-- End Side Tab -->
+
+
+
 						</div> <!-- End Main Slider -->
 					</div> <!-- End Main Content -->
 

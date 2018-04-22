@@ -205,136 +205,77 @@
 
 							<!-- ___Start Column___ -->
 							<div class="text-center">
-								<div class=" w-100">
+										
 											<div class="sidebar-widget sidebar-tab">
 												<div role="tabpanel">
 													<!-- Nav Tabs -->
 													<ul class="nav nav-tabs" role="tablist">
-														<li role="presentation" class="active"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab">Рейтинг</a></li>
-														<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab">ПРОГОЛОСОВАТЬ/Пройти опрос</a></li>
-														<li role="presentation"><a href="#tag" aria-controls="tag" role="tab" data-toggle="tab">Подать жалобу</a></li>
+														<li role="presentation" class="active"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab"><font color="green">Положительные</font></a></li>
+														<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab"><font color="red">Отрицательные</font></a></li>
+														<li role="presentation"><a href="about">Назад к учреждению</a></li>
 													</ul>
 
 													<!-- ___Tab Content___ -->
 													<div class="tab-content">
 														<!-- ___Tab Pane Popular___ -->
 														<div role="tabpanel" class="tab-pane fade in active" id="popular">
-															<div id="diagram"></div>
-															<br>
-															<div class="media">
-																<style>
-																.cent{
-   																		text-align: center;
-																}
-															</style>
-																		<div class="media-body media-left">
-																			<div class="media-left__top">
-																				<center><h3>Таблица показателей</h3></center>
-																				<center><span>Основная информация в цифрах</span></center>
-																			</div>
-																			<div class="media-left__bottom">
-																				
-																				<table class="table">
-																					<thead>
-																						<td><center><h5>Критерий</h5></center></td>
-																						<td><center><h5>Показатель</h5></center></td>
-																					</thead>
-																					<tr>
-																						<td class="cent"><font color="green"><h6>Количество оказанных услуг</h6></font></td>
-																						<td class="cent"><h6>123 000</h6></td>
-																					</tr>
-																					<tr>
-																						<td class="cent"><font color="red"><h6>Количество жалоб</h6></font></td>
-																						<td class="cent"><h6>4 234</h6></td>
-																					</tr>
-
-																					<tr>
-																						<td class="cent"><font color="red"><h6>В т.ч. на соблюдение этики</h6></font></td>
-																						<td class="cent"><h6>1 200</h6></td>
-																					</tr>
-
-																					<tr>
-																						<td class="cent"><font color="red"><h6>В т.ч. на проявления коррупции</h6></font></td>
-																						<td class="cent"><h6>500</h6></td>
-																					</tr>
-																					
-																					<tr>
-																						<td class="cent"><font color="red"><h6>В т.ч. на быстроту обслуживания</h6></font></td>
-																						<td class="cent"><h6>1 500</h6></td>
-																					</tr>
-
-																				</table>
-
-																			</div>
-																		</div>
-																	</div>
-
-
-														</div>
-														<!-- End Tab Pane Popular -->
-
-														<!-- ___Tab Pane Video___ -->
-														<div role="tabpanel" class="tab-pane fade" id="video">
 															<ul>
 																<li>
 																	<div class="media">
 																		<div class="media-body media-left">
 																			<div class="media-left__top">
-																				<h3>Оставить оценку</h3>
-																				<span>Выберите нужную категорию и оцените организацию</span>
+																				<h3>Лаура</h3>
+																				<span>Январь 20, 2018</span>
 																			</div>
 																			<div class="media-left__bottom">
-																					<div style="float:left;">
-																					<select class="custom-select form-control">
-																						<option>Общая оценка</option>
-																						<option>Этика сотрудников</option>
-																						<option>Скорость обслуживания</option>
-																						<option>Отсутствие больших очередей</option>
-																					</select>
-																					<br>
-																					<span style="font-size: 30px;" class="fa fa-star checked"></span>
-																					<span style="font-size: 30px;" class="fa fa-star checked"></span>
-																					<span style="font-size: 30px;" class="fa fa-star checked"></span>
-																					<span style="font-size: 30px;" class="fa fa-star"></span>
-																					<span style="font-size: 30px;" class="fa fa-star"></span>
-																					<br>
-																					<button class="btn btn-success form-control">Оценить</button>
-																				</div>
-																		</div>
-																	</div>
-
-																		<div class="media-left__top">
-																				<h3>Пройти опрос</h3>
-																				<span>Ваши ответы очень важны для достоверного построения рейтинга организации</span>
-
+																				<p>
+																				Отличная школа! Сама в ней училась, никогда не видела проявлений коррупции!</p>
+																				<a href="">Подробнее</a>
 																			</div>
 
-																		<div class="media-left__bottom">
-																			<h5>С какими правонарушениями Вы сталкивались в данной организации?</h5>
-																			<input type="checkbox" class="form-control"> Коррупционные правонарушения
-																			<input type="checkbox" class="form-control"> Неэтичное поведение служащих
-																			<input type="checkbox" class="form-control"> Истребование излишних документов
-																			<input type="checkbox" class="form-control"> Нет, не сталкивался
-																			<br>
-																			<hr>
-																			<b>Ваш комментарий</b>
-																			<textarea class="form-control"></textarea>
-																			<button class="btn btn-success form-control">Отправить ответы</button>
 																		</div>
+																	</div><!-- End Media -->
+																</li>
 
+																<li>
+																	<div class="media">
+																		<div class="media-body media-left">
+																			<div class="media-left__top">
+																				<h3>Анара</h3>
+																				<span>Февраль 28, 2018</span>
+																			</div>
+																			<div class="media-left__bottom">
+																				<p>
+																				Да, ребенок ходит уже в шестой класс, всегда отзывчивое руководство</p>
+																				<a href="">Подробнее</a>
+																			</div>
+
+																		</div>
+																	</div><!-- End Media -->
+																</li>
+
+																<li>
+																	<div class="media">
+																		<div class="media-body media-left">
+																			<div class="media-left__top">
+																				<h3>Ильяс</h3>
+																				<span>Январь 20, 2015</span>
+																			</div>
+																			<div class="media-left__bottom">
+																				<p>Всегда восхищалась учителями данной школы. Ребенок учится и делает задания так легко, что кажется скоро сможет перепрыгнуть пятый класс</p>
+																				<a href="">Подробнее</a>
+																			</div>
+
+																		</div>
 																	</div><!-- End Media -->
 																</li>
 															</ul>
-														</div>
-														<!-- End Tab Pane Video -->
 
-														<!-- ___Tab Pane Tag___ -->
-														<div role="tabpanel" class="tab-pane fade" id="tag">
 															<div class="col-md-12 w-100">
 																<div class="contact bg-box-shadow">
 																	<div class="contact-logo text-center">
 																		<i class="pe-7s-mail"></i>
-																		<p>Написать жалобу</p>
+																		<p>Написать положительный отзыв</p>
 																	</div><!-- End Contact Logo -->
 
 																	<!-- ___Start Contact Form___ -->
@@ -373,36 +314,137 @@
 																						<textarea class="form-control" rows="7" id="message" name="message" ></textarea>
 																					</div>
 																					<div class="form-group">
-																						<label for="web">Выбрать ЭЦП</label>
-																						<input type="file" class="form-control" id="web" name="web" >
-																					</div>
-																					<div class="form-group">
-																						<button type="submit" class="button btn btn-default" >Отправить используя ЭЦП</button>
+																						<button type="submit" class="button btn btn-default" >Отправить</button>
 																					</div>
 																				</div><!-- End Column 6 -->
 																			</form><!-- End Form -->
 																		</div><!-- End Row -->
 																	</div><!-- End Contact Form -->
 
+																</div><!-- End Contact -->
+																<br>
+															</div>
 
 
+														</div>
+														<!-- End Tab Pane Popular -->
+
+														<!-- ___Tab Pane Video___ -->
+														<div role="tabpanel" class="tab-pane fade" id="video">
+															<ul>
+																<li>
+																	<div class="media">
+																		<div class="media-body media-left">
+																			<div class="media-left__top">
+																				<h3>Ильяс</h3>
+																				<span>Январь 20, 2018</span>
+																			</div>
+																			<div class="media-left__bottom">
+																				<p>
+																				А у меня учитель попросил взятку</p>
+																				<a href="">Подробнее</a>
+																			</div>
+
+																		</div>
+																	</div><!-- End Media -->
+																</li>
+
+																<li>
+																	<div class="media">
+																		<div class="media-body media-left">
+																			<div class="media-left__top">
+																				<h3>Серик</h3>
+																				<span>Февраль 28, 2018</span>
+																			</div>
+																			<div class="media-left__bottom">
+																				<p>
+																				Вот вот, в прошлый раз снова поборы устроили, все на ремонт, а у самих вон сколько в бюджете выделяют на ремонт!!!</p>
+																				<a href="">Подробнее</a>
+																			</div>
+
+																		</div>
+																	</div><!-- End Media -->
+																</li>
+
+																<li>
+																	<div class="media">
+																		<div class="media-body media-left">
+																			<div class="media-left__top">
+																				<h3>Ильяс</h3>
+																				<span>Январь 20, 2015</span>
+																			</div>
+																			<div class="media-left__bottom">
+																				<p>Да как обычно, просто деньги себе забрать хотят</p>
+																				<a href="">Подробнее</a>
+																			</div>
+
+																		</div>
+																	</div><!-- End Media -->
+																</li>
+															</ul>
+
+
+
+															<div class="col-md-12 w-100">
+																<div class="contact bg-box-shadow">
+																	<div class="contact-logo text-center">
+																		<i class="pe-7s-mail"></i>
+																		<p>Написать отрицательный отзыв</p>
+																	</div><!-- End Contact Logo -->
+
+																	<!-- ___Start Contact Form___ -->
+																	<div class="contact-form">
+																		<div class="row">
+																			<form>
+
+																				<!-- ___Input .Name .Email. Website___ -->
+																				<div class="col-md-6">
+																					<div class="form-group">
+																						<label for="name">Ваше имя</label>
+																						<input type="text" class="form-control" id="name" name="name" >
+																					</div>
+
+																					<div class="form-group">
+																						<label for="email">Ваша почта</label>
+																						<input type="text" class="form-control" id="email" name="email" >
+																					</div>
+
+																					<div class="form-group">
+																						<label for="web">Ваш номер</label>
+																						<input type="text" class="form-control" id="web" name="web" >
+																					</div>
+
+																					<div class="form-group">
+																						<label for="web">Прикрепить видео, фото</label>
+																						<input type="file" class="form-control" id="web" name="web" >
+																					</div>
+																				</div><!-- End Column 6 -->
+
+																				<!-- ___Message & Send It___ -->
+																				<div class="col-md-6">
+
+																					<div class="form-group">
+																						<label for="message">Сообщение</label>
+																						<textarea class="form-control" rows="7" id="message" name="message" ></textarea>
+																					</div>
+																					<div class="form-group">
+																						<button type="submit" class="button btn btn-default" >Отправить</button>
+																					</div>
+																				</div><!-- End Column 6 -->
+																			</form><!-- End Form -->
+																		</div><!-- End Row -->
+																	</div><!-- End Contact Form -->
 
 																</div><!-- End Contact -->
 
-																<!-- ___Start Map___ -->
-																<div class="row">
-																	<div class="col-md-12">
-
-																		<h3 class="map-title">Адрес учреждения</h3>
-																		<div class="mm-google-map bg-box-shadow common-border">
-																			<div id="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A758d2c5a33155753f61f8263e6a39e84fd9952575915a6209f307670a228a75f&amp;width=100%25&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script></div>
-																		</div>
-
-																	</div>
-																</div><!-- End Row -->
-
 															</div>
-														</div><!-- End Tab Pane Tag-->
+
+															<br>
+
+														</div>
+														<!-- End Tab Pane Video -->
+
+													
 													</div><!-- End Tab Content -->
 												</div><!-- End Tab Panel -->
 											</div><!-- End Side Tab -->
@@ -412,9 +454,6 @@
 							</div><!-- Content -->
 						</div> <!-- End Row -->
 					</div>
-								
-							</div>
-							<!-- End Column -->
 
 <!-- End Main Content -->
 

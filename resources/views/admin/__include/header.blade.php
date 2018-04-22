@@ -1,7 +1,7 @@
 <div class="container">
     <div class="navbar p-0">
         <a class="navbar-brand" href="{{ action('Admin\IndexController@getIndex') }}">
-            HalykUni
+            Elim-ai
         </a>
         <div class="nav order-lg-2">
             <div class="dropdown ml-3">

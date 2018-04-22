@@ -34,7 +34,7 @@
                     <a href="javascript:void(0)" class="nav-link"><i class="fe fe-server"></i> Отчеты</a>
                     <div class="nav-submenu nav">
                         <a href="{{ action('Admin\Report\UploadController@getIndex') }}" class="nav-item ">Форма загрузки</a>
-                        <a href="{{ action('Admin\Report\SampleController@getIndex') }}" class="nav-item ">Номенклатура</a>
+                        <a href="{{ action('Admin\Report\SampleController@getIndex') }}" class="nav-item ">Авто-анализ отчетов</a>
                     </div>
                 </li>
 

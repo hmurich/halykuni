@@ -4,6 +4,9 @@
 Route::get('/', 'IndexController@getIndex');
 Route::post('org-list', 'IndexController@getAjaxOrg');
 Route::get('about', 'IndexController@getAbout');
+Route::get('otzyvy', 'IndexController@getOtzyvy');
+Route::get('budzhet', 'IndexController@getBudzhet');
+Route::get('spisok', 'IndexController@getOrglist');
 
 
 Route::get('login', 'LoginController@getLogin');

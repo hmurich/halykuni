@@ -33,4 +33,25 @@ class IndexController extends Controller{
         return view('front.about', $ar);
     }
 
+    function getBudzhet(){
+        $ar = [];
+        $ar['title'] = 'Бюджет организации';
+
+        return view('front.budzhet', $ar);
+    }
+
+    function getOtzyvy(){
+        $ar = [];
+        $ar['title'] = 'Отзывы об организации';
+
+        return view('front.otzyvy', $ar);
+    }
+
+    function getOrglist(){
+        $ar = [];
+        $ar['title'] = 'Организации списком';
+
+        return view('front.spisok', $ar);
+    }
+
 }
