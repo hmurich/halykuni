@@ -44,7 +44,7 @@ requirejs(['jquery'], function( $ ) {
             lng = jQuery("#lng").val();
             lat = jQuery("#lat").val();
 
-            if (lng == '' && lat == ''  ){
+            if ((lng == '' && lat == '')  || lng == undefined){
                 myMap = new ymaps.Map("map",{
                     center: [51.14345176, 71.44592914],
                     zoom: 10,
@@ -58,6 +58,8 @@ requirejs(['jquery'], function( $ ) {
                 var center = [];
                 center.push(lng);
                 center.push(lat);
+
+                console.log(center);
 
                 myMap = new ymaps.Map("map",{
                     center: center,
@@ -108,6 +110,17 @@ requirejs(['jquery'], function( $ ) {
         }
     }
 
+
+
+    if ($('.js_show_on_map_spec').length > 0){
+        $("#map").css('visibility', 'hidden');
+        $('.js_show_on_map_spec').click(function(){
+            if ($("#map").css('visibility') == 'visible')
+                $("#map").css('visibility', 'hidden');
+            else
+                $("#map").css('visibility', 'visible');
+        });
+    }
 
 
 

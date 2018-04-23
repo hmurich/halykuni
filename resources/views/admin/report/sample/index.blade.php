@@ -45,49 +45,53 @@
  <div class="col-md-12">
                     <div class="row">
 
-   <h4> Количество жалоб на качество оказанных государственных услуг <font color="red"><b>превышает допустимый коэффициент</b></font> за период с января 2018 по март 2018 года <font color="blue">в сфере оказания медицинских услуг</font></h4> 
-   <button class="btn btn-success">Посмотреть на карте</button>
+   <h4> Количество жалоб на качество оказанных государственных услуг <font color="red"><b>превышает допустимый коэффициент</b></font> за период с января 2018 по март 2018 года <font color="blue">в сфере оказания медицинских услуг</font></h4>
+   <button class="btn btn-success js_show_on_map_spec">Посмотреть на карте</button>
 
-    <h4> В организации "Поликлинника № 1 города Астаны" <font color="red"><b>имеется недопустимое количество</b></font> необоснованных отказов за период с февраля 2018 по март 2018 года <font color="blue">в сфере оказания медицинских услуг</font></h4> <button class="btn btn-success">Посмотреть на карте</button>
+    <h4> В организации "Поликлинника № 1 города Астаны" <font color="red"><b>имеется недопустимое количество</b></font> необоснованных отказов за период с февраля 2018 по март 2018 года <font color="blue">в сфере оказания медицинских услуг</font></h4> <button class="btn btn-success js_show_on_map_spec">Посмотреть на карте</button>
 
 
-     <h4> Количество поданных жалоб в "Средняя школа № 5 города Астаны" <font color="red"><b>превысило допустимый коэффициент</b></font> за период с января 2018 по март 2018 года <font color="blue"></font></h4> <button class="btn btn-success">Посмотреть на карте</button>
+     <h4> Количество поданных жалоб в "Средняя школа № 5 города Астаны" <font color="red"><b>превысило допустимый коэффициент</b></font> за период с января 2018 по март 2018 года <font color="blue"></font></h4> <button class="btn btn-success js_show_on_map_spec">Посмотреть на карте</button>
 
     </div>
 </div>
+
+<div id='map' style="width: 100%; height: 300px;"></div>
+<script src="/admin/js/block/dialog_edit.js"></script>
 @endsection
 
 
 @section('js_block')
     @parent
+    <script type="text/javascript" src="//api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU" ></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
 
     <script>
-    Highcharts.chart('container', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-           text: 'Отчет о работе местного исполнительного органа по внутреннему контролю за качеством оказания государственных услуг'
-        },
-        xAxis: {
-            categories: ['1 квартал', '2 квартал', '3 квартал', '4 квартал']
-        },
-        credits: {
-            enabled: false
-        },
-        series: [{
-            name: 'Количество проведенных контрольных мероприятий, всего из них:',
-            data: [205, 312, 250, 100]
-        }, {
-            name: 'Количество объектов контрольных мероприятий, всего из них:',
-            data: [150, 220, 270, 300]
-        }, {
-            name: 'Количество выявленных нарушений, всего, из них:',
-            data: [320, 152, 230, 120]
-        }]
+        Highcharts.chart('container', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+               text: 'Отчет о работе местного исполнительного органа по внутреннему контролю за качеством оказания государственных услуг'
+            },
+            xAxis: {
+                categories: ['1 квартал', '2 квартал', '3 квартал', '4 квартал']
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                name: 'Количество проведенных контрольных мероприятий, всего из них:',
+                data: [205, 312, 250, 100]
+            }, {
+                name: 'Количество объектов контрольных мероприятий, всего из них:',
+                data: [150, 220, 270, 300]
+            }, {
+                name: 'Количество выявленных нарушений, всего, из них:',
+                data: [320, 152, 230, 120]
+            }]
         });
 
     </script>

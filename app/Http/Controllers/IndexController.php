@@ -55,4 +55,11 @@ class IndexController extends Controller{
         return view('front.spisok', $ar);
     }
 
+    function getAppeal(){
+        $ar = [];
+        $ar['title'] = 'Проверка жалобы';
+
+        return view('front.appeal', $ar);
+    }
+
 }
