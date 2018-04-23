@@ -109,25 +109,16 @@
 											<span class="fa fa-star"></span>
 											<span class="fa fa-star"></span>
 											<span class="fa fa-star"></span>
-
-											
-													
-
-
 										</div>
 										<br>
 										  <div class="custom-select filter_rus">
-										<select class="form-control js_change_map">
-														<option>По этике</option>
-														<option>По скорости обслуживания</option>
-														<option>По наличию очередей</option>
-													</select>
-
-				<center><button class="btn btn-success">Искать!</button></center>
-
-												</div>
-												
-
+    		                                    <select class="form-control js_change_map">
+    												<option>По этике</option>
+    												<option>По скорости обслуживания</option>
+    												<option>По наличию очередей</option>
+    											</select>
+	                                            <center><button class="btn btn-success">Искать!</button></center>
+											</div>
 										</div><!-- End Latest Post Body -->
 									</div><!-- End According Content -->
 								<!-- End Latest Post Head -->
@@ -437,15 +428,33 @@
 
 
 					<!-- ___Main Content___ -->
-					<div class="main-content" style="padding:0">
+					<div class="main-content" style="padding:0;     position: relative;">
 						<div class="main-slider">
                             <div id="yandex_map" style="    width: 100%; height: 500px;"></div>
                             <div ></div>
+                            <div id='budjet_desc' class="map-description">
+                                <h5>Контрольные суммы</h5>
+                                <b>Общая сумма:</b> <span class="pull-right">1 500 000 000 тг.</span> <br/>
+                                <b>Средняя сумма:</b> <span class="pull-right">250 000 000 тг. </span><br/>
+                                <b>Средняя по ремонту дорог:</b> <span class="pull-right">450 000 000 тг.</span> <br/>
+                                <b>Средняя по ремонту школ:</b><span class="pull-right"> 250 000 000 тг.</span> <br/>
+                                <b>Средняя по постройке больниц:</b>&nbsp;&nbsp;&nbsp;<span class="pull-right">700 000 000 тг.</span>
+                            </div>
+                            <div id='org_desc' class="map-description" style="">
+                                <h5>Определение цветами коррупционных рисков</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="circle circle-1"></div> Зона свобоная от коррупции <br/>
+                                        <div class="circle circle-2"></div> Низкий уровень коррупции
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="circle circle-3"></div> Средний уровень коррупции<br/>
+                                        <div class="circle circle-4"></div> Высокий уровень коррупции
+                                    </div>
+                                </div>
+                            </div>
 						</div> <!-- End Main Slider -->
 					</div> <!-- End Main Content -->
-
-
-
 
 					<div class="footer text-center">
 						<p>copyrights © 2018</p>

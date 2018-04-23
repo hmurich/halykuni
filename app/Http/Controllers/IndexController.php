@@ -17,6 +17,7 @@ class IndexController extends Controller{
 
     function getAjaxOrg(){
         $ar_id = Organization::pluck('id')->toArray();
+
         for ($i = 0; $i<round(count($ar_id) / 2); $i++) {
             $rand_k = rand($i, (count($ar_id) - 1));
             unset($ar_id[$rand_k]);

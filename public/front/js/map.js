@@ -27,6 +27,8 @@ function init()
     ymaps.panorama.Base.call();
 
     function getPlacemark(){
+        $('#budjet_desc').hide();
+        $('#org_desc').show('slow');
         $.post( "/org-list", { cat_id:1, city_id: 1}).done(function( data ) {
             setPlacemark(data);
         });
@@ -71,9 +73,14 @@ function init()
             });
 
             myMap.geoObjects.add(placemark);
+            $('#budjet_desc').show('slow');
+            $('#org_desc').hide('slow');
         }
 
     }
+
+    var place_types = Array('islands#grayCircleDotIcon','islands#darkOrangeCircleDotIcon','islands#redCircleDotIcon','islands#blackCircleDotIcon');
+
 
     function setPlacemark(data){
         myMap.geoObjects.removeAll();
@@ -94,7 +101,7 @@ function init()
                    '</address>'
                ].join('')
            }, {
-               preset: 'islands#blueLeisureCircleIcon',
+               preset: place_types[Math.floor(Math.random()*place_types.length)],
                balloonPanelMaxMapArea: Infinity
            });
 
