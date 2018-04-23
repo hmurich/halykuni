@@ -221,7 +221,7 @@
 																		<div class="list active" role="presentation"><a href="#beauty-care" aria-controls="beauty-care" role="tab" data-toggle="tab">Как подать жалобу?</a></div>
 
 																		<div class="list" role="presentation"><a href="#hair-style" aria-controls="hair-style" role="tab" data-toggle="tab">Что нужно знать при подаче?</a></div>
-
+                                                                        <div class="list" role="presentation"><a href="{{ action('IndexController@getAppeal') }}" >Проверить жалобу</a></div>
 																	</div><!-- End Nav Tab -->
 																</div><!-- End Sub Menu List -->
 															</div><!-- End Column -->
@@ -336,6 +336,7 @@
 																		<div class="list active" role="presentation"><a href="#budzhet-main" aria-controls="beauty-care" role="tab" data-toggle="tab">Информация о бюджете</a></div>
 
 																		<div class="list" role="presentation"><a href="#how-to-use-budzhet" aria-controls="hair-style" role="tab" data-toggle="tab">Смотреть по категориям</a></div>
+                                                                        <!--div class="list" ><a href="{{ action('IndexController@getAppeal') }}" >Проверить жалобу</a></div> -->
 
 																	</div><!-- End Nav Tab -->
 																</div><!-- End Sub Menu List -->
@@ -378,7 +379,7 @@
 																	<!-- ___Tab Pane___ -->
 																	<div role="tabpanel" class="tab-pane fade" id="how-to-use-budzhet">
 																		<div class="row">
-																			<div class="col-md-4 col-sm-4  no-padding">
+																			<div class="col-md-4 col-sm-3  no-padding">
 																				<div class="menu-post">
 																					<div class="post">
 																						<img class="img-responsive" src="images/mm/mm-post-5.jpg" alt="" />
@@ -387,7 +388,7 @@
 																					</div>
 																				</div><!-- End Menu Post -->
 																			</div>
-																			<div class="col-md-4 col-sm-4  no-padding">
+																			<div class="col-md-4 col-sm-3  no-padding">
 																				<div class="menu-post">
 																					<div class="post">
 																						<img class="img-responsive" src="images/mm/mm-post-6.jpg" alt="" />
@@ -396,7 +397,7 @@
 																					</div>
 																				</div><!-- End Menu Post -->
 																			</div>
-																			<div class="col-md-4 col-sm-4  no-padding">
+																			<div class="col-md-4 col-sm-3  no-padding">
 																				<div class="menu-post">
 																					<div class="post">
 																						<img class="img-responsive" src="images/mm/mm-post-7.jpg" alt="" />
