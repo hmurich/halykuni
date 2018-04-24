@@ -43,6 +43,8 @@
                     <div class="nav-submenu nav">
                         <a href="{{ action('Admin\InvestigationController@getIndex') }}" class="nav-item ">Расследования</a>
                         <a href="{{ action('Admin\TopManagerController@getIndex') }}" class="nav-item ">Качество гос услуг</a>
+                        <a href="{{ action('Admin\Organ\OrganController@getIndex') }}" class="nav-item ">Органы</a>
+
                     </div>
                 </li>
 

@@ -13,7 +13,7 @@ use App\Model\TopManager;
 
 class OrganController extends Controller{
     function getIndex (Request $request){
-        $items = Organization::orderBy('name', 'asc');
+        $items = Organization::orderBy('id', 'desc');
 
         if ($request->has('name') && trim($request->get('name')) != '')
             $items = $items->where('name', 'like', '%'.$request->get('name').'%');
@@ -25,7 +25,7 @@ class OrganController extends Controller{
         $ar['ar_region'] = SysRegion::pluck('name', 'sys_key')->toArray();
         $ar['ar_cat'] = SysCat::pluck('name', 'id')->toArray();
         $ar['ar_manager'] = TopManager::pluck('full_name', 'id')->toArray();
-        
+
 
         return view('admin.organ.organ.index', $ar);
     }

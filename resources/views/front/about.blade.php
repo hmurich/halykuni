@@ -35,7 +35,7 @@
 					<hr>
 
 					<input type="text" class="form-control no-radius" placeholder="Впишите сюда ключевые слова Вашего вопроса">
-								
+
 									<button class="form-control btn btn-success" onClick="show_inses();">Найти</button>
 
 					<hr>
@@ -66,7 +66,7 @@
 							<span class="accordion-toggle"><b>Школа № 22</b><span class="toggle-icon"><i class="fa fa-info"></i></span></span>
 									<div class="accordion-content">
 										<div style="padding:10px;color:white;font-size:12px;font-weight: lighter;">
-										Коммунальное бюджетное образовательное учреждение "Средняя общеобразовательная школа № 22 г. Астана" - это не просто школа, это дом, в котором одновременно живет, учится и работает более 1100 человек. 
+										Коммунальное бюджетное образовательное учреждение "Средняя общеобразовательная школа № 22 г. Астана" - это не просто школа, это дом, в котором одновременно живет, учится и работает более 1100 человек.
 										<br><br>
 										<b>Рейтинг: </b>
 										<span class="fa fa-star checked"></span>
@@ -79,7 +79,7 @@
 											<span class="fa fa-star"></span>
 									</div>
 										<div class="menu-body">
-											
+
 										<span class="accordion-toggle">Директор</span>
 
 										<img src="/front/images/director.jpg" style="margin:10px;">
@@ -117,12 +117,12 @@
 						<div class="top-bar-body">
 							<div class="search-body targetDiv" id="div1">
 								<p>Роботизированная система консультаций "ЮрСоветник" </p>
-							
+
 									<input type="text" class="form-control no-radius" placeholder="Впишите сюда ключевые слова Вашего вопроса">
 
 									<button class="form-control btn btn-success" onClick="open_advicer();">Найти</button>
 
-							
+
 							</div>
 
 							<!-- ___Start Top Bar Login Body___ -->
@@ -150,7 +150,7 @@
 									<div class="col-md-6">
 										<p><b>Регистрация</b></p>
 										<div class="register">
-											
+
 											<button type="submit" class="btn btn-default form-control no-radius">Зарегистрироваться по ЭЦП</button>
 										</div>
 									</div><!-- End Column -->
@@ -158,7 +158,7 @@
 							</div>
 							<!-- End Top Bar Login Body -->
 
-						
+
 						</div><!-- End Top Bar Body -->
 					</div>
 					<!-- End Top Bar -->
@@ -200,8 +200,8 @@
 					<div class="main-content">
 						<div class="row" style="margin-top:-90px;">
 							<div class="col-md-12 w-100">
-								
-							
+
+
 
 							<!-- ___Start Column___ -->
 							<div class="text-center">
@@ -233,7 +233,7 @@
 																				<center><span>Основная информация в цифрах</span></center>
 																			</div>
 																			<div class="media-left__bottom">
-																				
+
 																				<table class="table">
 																					<thead>
 																						<td><center><h5>Критерий</h5></center></td>
@@ -257,7 +257,7 @@
 																						<td class="cent"><font color="red"><h6>В т.ч. на проявления коррупции</h6></font></td>
 																						<td class="cent"><h6>500</h6></td>
 																					</tr>
-																					
+
 																					<tr>
 																						<td class="cent"><font color="red"><h6>В т.ч. на быстроту обслуживания</h6></font></td>
 																						<td class="cent"><h6>1 500</h6></td>
@@ -278,13 +278,14 @@
 															<ul>
 																<li>
 																	<div class="media">
+                                                                        <!--
 																		<div class="media-body media-left">
 																			<div class="media-left__top">
 																				<h3>Оставить оценку</h3>
 																				<span>Выберите нужную категорию и оцените организацию</span>
 																			</div>
 																			<div class="media-left__bottom">
-																					<div style="float:left;">
+																				<div style="float:left;">
 																					<select class="custom-select form-control">
 																						<option>Общая оценка</option>
 																						<option>Этика сотрудников</option>
@@ -300,14 +301,15 @@
 																					<br>
 																					<button class="btn btn-success form-control">Оценить</button>
 																				</div>
-																		</div>
-																	</div>
+    																		</div>
+    																	</div>
+                                                                        -->
 
 																		<div class="media-left__top">
-																				<h3>Пройти опрос</h3>
-																				<span>Ваши ответы очень важны для достоверного построения рейтинга организации</span>
+																			<h3>Пройти опрос</h3>
+																			<span>Ваши ответы очень важны для достоверного построения рейтинга организации</span>
 
-																			</div>
+																		</div>
 
 																		<div class="media-left__bottom">
 																			<h5>С какими правонарушениями Вы сталкивались в данной организации?</h5>
@@ -315,10 +317,10 @@
 																			<input type="checkbox" class="form-control"> Неэтичное поведение служащих
 																			<input type="checkbox" class="form-control"> Истребование излишних документов
 																			<input type="checkbox" class="form-control"> Нет, не сталкивался
-																			<br>
+																			<!--<br>
 																			<hr>
 																			<b>Ваш комментарий</b>
-																			<textarea class="form-control"></textarea>
+																			<textarea class="form-control"></textarea>-->
 																			<button class="btn btn-success form-control">Отправить ответы</button>
 																		</div>
 
@@ -412,7 +414,7 @@
 							</div><!-- Content -->
 						</div> <!-- End Row -->
 					</div>
-								
+
 							</div>
 							<!-- End Column -->
 
@@ -501,15 +503,15 @@
 			</div><!-- End Row -->
 		</div><!-- End Container -->
 
-		
+
 
         <script type="text/javascript" src="{{ URL::asset('front/js/jquery-2.2.3.min.js') }}" ></script>
-        
+
         <script src="/front/js/owl.carousel.min.js"></script>			<!-- ===This Script for Owl Carousel=== -->
         <script src="/front/js/bootstrap.min.js"></script>			<!-- ===This Script for Bootstrap=== -->
         <script src="/front/js/jquery.meanmenu.min.js"></script>		<!-- ===This Script for Main Menu=== -->
 		<script src="/front/js/jquery.jscroll.js"></script>
-		<script src="/front/js/scripts.js"></script>	
+		<script src="/front/js/scripts.js"></script>
 		<script src="/front/js/highcharts.js"></script>
         <script src="/front/js/jquery.jscroll.js"></script>
         <script src="/front/js/hightcharts_custom.js"></script>
@@ -525,7 +527,7 @@
 			function show_inses(){
 				$( "#inses" ).toggle( "slide" );
 			}
-			
+
 		</script>
     </body>
 </html>

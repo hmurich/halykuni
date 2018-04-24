@@ -35,7 +35,7 @@
 					<hr>
 
 					<input type="text" class="form-control no-radius" placeholder="Впишите сюда ключевые слова Вашего вопроса">
-								
+
 									<button class="form-control btn btn-success" onClick="show_inses();">Найти</button>
 
 					<hr>
@@ -66,7 +66,7 @@
 							<span class="accordion-toggle"><b>Школа № 22</b><span class="toggle-icon"><i class="fa fa-info"></i></span></span>
 									<div class="accordion-content">
 										<div style="padding:10px;color:white;font-size:12px;font-weight: lighter;">
-										Коммунальное бюджетное образовательное учреждение "Средняя общеобразовательная школа № 22 г. Астана" - это не просто школа, это дом, в котором одновременно живет, учится и работает более 1100 человек. 
+										Коммунальное бюджетное образовательное учреждение "Средняя общеобразовательная школа № 22 г. Астана" - это не просто школа, это дом, в котором одновременно живет, учится и работает более 1100 человек.
 										<br><br>
 										<b>Рейтинг: </b>
 										<span class="fa fa-star checked"></span>
@@ -79,7 +79,7 @@
 											<span class="fa fa-star"></span>
 									</div>
 										<div class="menu-body">
-											
+
 										<span class="accordion-toggle">Директор</span>
 
 										<img src="/front/images/director.jpg" style="margin:10px;">
@@ -117,12 +117,12 @@
 						<div class="top-bar-body">
 							<div class="search-body targetDiv" id="div1">
 								<p>Роботизированная система консультаций "ЮрСоветник" </p>
-							
+
 									<input type="text" class="form-control no-radius" placeholder="Впишите сюда ключевые слова Вашего вопроса">
 
 									<button class="form-control btn btn-success" onClick="open_advicer();">Найти</button>
 
-							
+
 							</div>
 
 							<!-- ___Start Top Bar Login Body___ -->
@@ -150,7 +150,7 @@
 									<div class="col-md-6">
 										<p><b>Регистрация</b></p>
 										<div class="register">
-											
+
 											<button type="submit" class="btn btn-default form-control no-radius">Зарегистрироваться по ЭЦП</button>
 										</div>
 									</div><!-- End Column -->
@@ -158,7 +158,7 @@
 							</div>
 							<!-- End Top Bar Login Body -->
 
-						
+
 						</div><!-- End Top Bar Body -->
 					</div>
 					<!-- End Top Bar -->
@@ -200,24 +200,24 @@
 					<div class="main-content">
 						<div class="row" style="margin-top:-90px;">
 							<div class="col-md-12 w-100">
-								
-							
+
+
 
 							<!-- ___Start Column___ -->
 							<div class="text-center">
-										
+
 											<div class="sidebar-widget sidebar-tab">
 												<div role="tabpanel">
 													<!-- Nav Tabs -->
 													<ul class="nav nav-tabs" role="tablist">
-														<li role="presentation" class="active"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab"><font color="green">Положительные</font></a></li>
-														<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab"><font color="red">Отрицательные</font></a></li>
+														<!--<li role="presentation" class="active"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab"><font color="green">О</font></a></li>-->
+														<li role="presentation"><a href="#video" aria-controls="video" role="tab" data-toggle="tab"><font color="red">Отзывы</font></a></li>
 														<li role="presentation"><a href="about">Назад к учреждению</a></li>
 													</ul>
 
 													<!-- ___Tab Content___ -->
 													<div class="tab-content">
-														<!-- ___Tab Pane Popular___ -->
+														<!-- 
 														<div role="tabpanel" class="tab-pane fade in active" id="popular">
 															<ul>
 																<li>
@@ -444,7 +444,7 @@
 														</div>
 														<!-- End Tab Pane Video -->
 
-													
+
 													</div><!-- End Tab Content -->
 												</div><!-- End Tab Panel -->
 											</div><!-- End Side Tab -->
@@ -540,15 +540,15 @@
 			</div><!-- End Row -->
 		</div><!-- End Container -->
 
-		
+
 
         <script type="text/javascript" src="{{ URL::asset('front/js/jquery-2.2.3.min.js') }}" ></script>
-        
+
         <script src="/front/js/owl.carousel.min.js"></script>			<!-- ===This Script for Owl Carousel=== -->
         <script src="/front/js/bootstrap.min.js"></script>			<!-- ===This Script for Bootstrap=== -->
         <script src="/front/js/jquery.meanmenu.min.js"></script>		<!-- ===This Script for Main Menu=== -->
 		<script src="/front/js/jquery.jscroll.js"></script>
-		<script src="/front/js/scripts.js"></script>	
+		<script src="/front/js/scripts.js"></script>
 		<script src="/front/js/highcharts.js"></script>
         <script src="/front/js/jquery.jscroll.js"></script>
         <script src="/front/js/hightcharts_custom.js"></script>
@@ -564,7 +564,7 @@
 			function show_inses(){
 				$( "#inses" ).toggle( "slide" );
 			}
-			
+
 		</script>
     </body>
 </html>
