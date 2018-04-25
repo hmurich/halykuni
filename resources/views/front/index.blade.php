@@ -29,7 +29,7 @@
                                         <b>Средняя по ремонту школ:</b><span class="pull-right"> 250 000 000 тг.</span> <br/>
                                         <b>Средняя по постройке больниц:</b>&nbsp;&nbsp;&nbsp;<span class="pull-right">700 000 000 тг.</span>
                                     </div>
-                                    <div id='org_desc' class="map-description" style="">
+                                    <div id='org_desc' class="map-description" style="    width: 30%;">
                                         <h5>Определение цветами рейтинга</h5>
                                         <div class="row">
                                             <div class="col-md-6">
@@ -112,4 +112,67 @@
 </div>
 
 
+@endsection
+
+
+@section('js_block')
+<script>
+function showHichart(){
+    console.log('js_indic_diagramm');
+    Highcharts.chart('js_indic_diagramm', {
+        title: {
+            text: 'Суммы, выделяемые организации'
+        },
+        subtitle: {
+            text: 'Школа 22 (процентные показатели)'
+        },
+        yAxis: {
+            title: {
+                text: 'Суммы'
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle'
+        },
+
+        plotOptions: {
+            series: {
+                label: {
+                    connectorAllowed: false
+                },
+                pointStart: 2010
+            }
+        },
+        series: [{
+                name: 'Канц. товары',
+                data: [600000, 234234, 34535, 13232, 567577, 567456, 567456, 34344]
+            }, {
+                name: 'Сфера питания',
+                data: [345345, 345456, 345356, 342342, 456456, 234234, 345345, 345634]
+            }, {
+                name: 'Ремонт',
+                data: [20, 30, 20, 40, 20, 10, 5, 10]
+            }
+        ],
+
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    legend: {
+                        layout: 'horizontal',
+                        align: 'center',
+                        verticalAlign: 'bottom'
+                    }
+                }
+            }]
+        }
+    });
+}
+
+</script>
 @endsection

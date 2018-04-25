@@ -82,7 +82,10 @@ function init()
                 //balloonPanelMaxMapArea: Infinity
             });
 
+
             myMap.geoObjects.add(placemark);
+
+
             $('#budjet_desc').show('slow');
             $('#org_desc').hide('slow');
         }
@@ -174,7 +177,8 @@ function init()
                    '<br/>',
                    'Услуга: лесопосадка в канализациях астаны',
                    '<br/>',
-                   'Подробнее: <a href="/about">перейти</a>',
+                   'Подробнее: <a href="/about">перейти</a> <br/>',
+                   '<a href="/diagramm.png" target="_blank"><img src="/diagramm.png"style="        width: 100%;height: auto;" /></a>',
                    '</address>'
                ].join('')
            }, {
@@ -184,7 +188,7 @@ function init()
 
             /*myPlacemark.data = item;
             myPlacemark.events.add('click', function () {
-
+                diagramm.png
             });
             */
 

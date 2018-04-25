@@ -71,6 +71,7 @@
 		<script src="/front/js/scripts.js"></script>
         <script src="/front/js/jquery.jscroll.js"></script>
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
+        <script src="/front/js/highcharts.js"></script>
         <script type="text/javascript" src="{{ URL::asset('front/js/map.js') }}" ></script>
 		<script>
 			jQuery(document).ready(function($) {
@@ -78,7 +79,7 @@
 			});
 
 			function open_advicer(){
-  					$( "#advicer" ).toggle( "slide" );
+				$( "#advicer" ).toggle( "slide" );
 			}
 
 
