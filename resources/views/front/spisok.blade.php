@@ -110,8 +110,8 @@
 											<span class="fa fa-star"></span>
 											<span class="fa fa-star"></span>
 
-											
-													
+
+
 
 
 										</div>
@@ -126,7 +126,7 @@
 				<center><button class="btn btn-success">Искать!</button></center>
 
 												</div>
-												
+
 
 										</div><!-- End Latest Post Body -->
 									</div><!-- End According Content -->
@@ -444,7 +444,7 @@
 													<!-- Nav Tabs -->
 													<ul class="nav nav-tabs" role="tablist">
 														<li role="presentation" class="active"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab"><font color="green">Список</font></a></li>
-														
+
 														<li role="presentation"><a href="../">Назад к карте</a></li>
 													</ul>
 
@@ -452,73 +452,15 @@
 													<div class="tab-content">
 														<!-- ___Tab Pane Popular___ -->
 														<div role="tabpanel" class="tab-pane fade in active" id="popular">
-															<ul>
-																<li>
-																	<div class="media">
-																		<div class="media-body media-left">
-																			<div class="media-left__top">
-																				<h3>Школа № 22, город Астана</h3>
-																				<span>Образовательное учреждение</span>
-																			</div>
-																			<div class="media-left__bottom">
-																				<p>
-																					КОММУНАЛЬНОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 22 Г. АСТАНА"
-																				</p>
-																				<a href="about">Подробнее</a>
-																			</div>
-
-																		</div>
-																	</div><!-- End Media -->
-																</li>
-
-																<li>
-																	<div class="media">
-																		<div class="media-body media-left">
-																			<div class="media-left__top">
-																				<h3>Школа № 25, город Астана</h3>
-																				<span>Образовательное учреждение</span>
-																			</div>
-																			<div class="media-left__bottom">
-																				<p>
-																					КОММУНАЛЬНОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 22 Г. АСТАНА"
-																				</p>
-																				<a href="about">Подробнее</a>
-																			</div>
-
-																		</div>
-																	</div><!-- End Media -->
-																</li>
-
-																<li>
-																	<div class="media">
-																		<div class="media-body media-left">
-																			<div class="media-left__top">
-																				<h3>Школа № 25, город Астана</h3>
-																				<span>Образовательное учреждение</span>
-																			</div>
-																			<div class="media-left__bottom">
-																				<p>
-																					КОММУНАЛЬНОЕ БЮДЖЕТНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ "СРЕДНЯЯ ОБЩЕОБРАЗОВАТЕЛЬНАЯ ШКОЛА № 22 Г. АСТАНА"
-																				</p>
-																				<a href="about">Подробнее</a>
-																			</div>
-
-																		</div>
-																	</div><!-- End Media -->
-																</li>
-
-																
-															</ul>
-
 															
 
 
 														</div>
 														<!-- End Tab Pane Popular -->
 
-														
 
-													
+
+
 													</div><!-- End Tab Content -->
 												</div><!-- End Tab Panel -->
 											</div><!-- End Side Tab -->
