@@ -4,7 +4,7 @@
         <ul>
             <!-- ___Start Category Nav Life Style___ -->
             <li id="life-style" class="mega-menu-li life-style" >
-                <a href="{{ action('IndexController@getIndex') }}"><i class="pe-7s-speaker" style="font-size:25px;"></i> Карта</a>
+                <a href="{{ action('IndexController@getIndex') }}"><i class="pe-7s-speaker" style="font-size:25px;"></i> Главная</a>
             </li>
 
             <!-- ___Start Category Nav Life Style___ -->

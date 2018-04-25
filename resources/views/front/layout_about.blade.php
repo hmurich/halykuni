@@ -24,6 +24,16 @@
         @section('css_block')
 
         @show
+        <style>
+            .menu-body ul li a:hover {
+                background: #fff;
+                color: #000000;
+            }
+            .menu-body ul li a {
+                background: #2a2f33;
+                transition: all 0.3s ease;
+            }
+        </style>
     </head>
     <body>
 

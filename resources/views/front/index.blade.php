@@ -19,7 +19,7 @@
 
                             <div class="tab-content" style="padding: 0;">
                                 <div role="tabpanel" class="tab-pane fade in active" id="popular">
-                                    <div id="yandex_map" style="width: 100%; height: 500px;"></div>
+                                    <div id="yandex_map" style="width: 100%; height: 400px;"></div>
                                     <div ></div>
                                     <div id='budjet_desc' class="map-description">
                                         <h5>Контрольные суммы</h5>
@@ -33,12 +33,12 @@
                                         <h5>Определение цветами рейтинга</h5>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <div class="circle circle-1"></div> Нулевой уровень  <br/>
-                                                <div class="circle circle-2"></div> Низкий уровень
+                                                <div class="circle circle-4"></div> Очень низкий   <br/>
+                                                <div class="circle circle-3"></div> Низкий уровень
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="circle circle-3"></div> Средний уровень <br/>
-                                                <div class="circle circle-4"></div> Высокий уровень
+                                                <div class="circle circle-2"></div> Средний уровень <br/>
+                                                <div class="circle circle-1"></div> Высокий уровень
                                             </div>
                                         </div>
                                     </div>

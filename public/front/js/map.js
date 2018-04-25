@@ -124,6 +124,32 @@ function init()
             });
 
             myMap.geoObjects.add(placemark);
+
+            console.log(coor[0][1], coor[0][0]);
+            var placemark = new ymaps.GeoObject({
+                geometry: {
+                    type: "Point",
+                    coordinates: [coor[0][0], coor[0][1]]
+                },
+                properties: {
+                    iconContent: random_summ + " тг.",
+                    balloonContentBody: [
+                        '<address>',
+                        '<strong>Ремонт школы №22</strong>',
+                        '<br/>',
+                        'Подрядчик: ТОО ООП',
+                        '<br/>',
+                        'Сумма: ' + random_summ + ' тг.',
+                        '</address>'
+                    ].join('')
+                }
+            }, {
+                preset: 'islands#blackStretchyIcon',
+                //balloonPanelMaxMapArea: Infinity
+            });
+
+            myMap.geoObjects.add(placemark);
+
             $('#budjet_desc').show('slow');
             $('#org_desc').hide('slow');
         }

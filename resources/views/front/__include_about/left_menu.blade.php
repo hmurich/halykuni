@@ -23,13 +23,13 @@
                     <span class="accordion-toggle">Услуги</span>
                     <ul>
                         <li>
-                            <a href="#s" style="padding: 10px 15px;text-transform: initial;">Выдача аттестата</a>
+                            <a href="#s" style="padding: 10px 15px;text-transform: initial;"> Выдача аттестата  <i class="fa fa-book pull-right"></i></a>
                         </li>
                         <li>
-                            <a href="#s" style="padding: 10px 15px;text-transform: initial;">Обучение детей</a>
+                            <a href="#s" style="padding: 10px 15px;text-transform: initial;">Обучение детей  <i class="fa fa-book pull-right"></i></a>
                         </li>
                         <li>
-                            <a href="#s" style="padding: 10px 15px;text-transform: initial;">Организация олимпиад</a>
+                            <a href="#s" style="padding: 10px 15px;text-transform: initial;">Организация олимпиад  <i class="fa fa-book pull-right"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -37,13 +37,13 @@
                     <span class="accordion-toggle">Положение</span>
                     <ul>
                         <li>
-                            <a href="#s" style="padding: 10px 15px;text-transform: initial;">Правила обучения</a>
+                            <a href="#s" style="padding: 10px 15px;text-transform: initial;">Правила обучения <i class="fa fa-download pull-right"></i></a>
                         </li>
                         <li>
-                            <a href="#s" style="padding: 10px 15px;text-transform: initial;">Устав организации</a>
+                            <a href="#s" style="padding: 10px 15px;text-transform: initial;">Устав организации <i class="fa fa-download pull-right"></i></a>
                         </li>
                         <li>
-                            <a href="#s" style="padding: 10px 15px;text-transform: initial;">Права учеников</a>
+                            <a href="#s" style="padding: 10px 15px;text-transform: initial;">Права учеников <i class="fa fa-download pull-right"></i></a>
                         </li>
                     </ul>
                 </div>
