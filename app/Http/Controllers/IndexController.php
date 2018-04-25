@@ -62,4 +62,11 @@ class IndexController extends Controller{
         return view('front.appeal', $ar);
     }
 
+    function getHistory(){
+        $ar = [];
+        $ar['title'] = 'История организации';
+
+        return view('front.history', $ar);
+    }
+
 }

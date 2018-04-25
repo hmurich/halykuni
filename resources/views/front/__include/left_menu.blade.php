@@ -32,7 +32,7 @@
 
                             <span class="accordion-toggle">По областям</span>
 
-                          <div class="custom-select filter_rus">
+                            <div class="custom-select filter_rus">
                                 <select class="form-control js_change_map">
                                     <option>Выберите</option>
                                     <option>Акмолинская</option>
@@ -67,7 +67,7 @@
                             </div>
                             -->
                             <div class="custom-select filter_rus">
-                                <center><button class="btn btn-success">Искать!</button></center>
+                                <center><button class="btn btn-success btn-block">Искать!</button></center>
                             </div>
                         </div><!-- End Latest Post Body -->
                     </div><!-- End According Content -->

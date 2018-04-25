@@ -8,6 +8,7 @@ Route::get('otzyvy', 'IndexController@getOtzyvy');
 Route::get('budzhet', 'IndexController@getBudzhet');
 Route::get('spisok', 'IndexController@getOrglist');
 Route::get('appeal', 'IndexController@getAppeal');
+Route::get('history', 'IndexController@getHistory');
 
 Route::get('login', 'LoginController@getLogin');
 Route::post('login', 'LoginController@postLogin');
