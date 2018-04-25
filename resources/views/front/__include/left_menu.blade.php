@@ -43,6 +43,21 @@
                                 </select>
                             </div>
 
+                            <span class="accordion-toggle">По рэйтингу</span>
+
+                            <div class="custom-select filter_rus">
+                                <select class="form-control js_change_map">
+                                    <option>Выберите</option>
+                                    <option>Общий</option>
+                                    <option>Опрос населения</option>
+                                    <option>Мероприятия антикоррупционного характера​</option>
+                                    <option>Нарушения этических норм</option>
+                                    <option>Нарушения Закона о государственных услугах</option>
+                                    <option>Административные и дисциплинарные правонарушения</option>
+                                    <option>Коррупционные преступления</option>
+                                </select>
+                            </div>
+
                             <!--
                             <span class="accordion-toggle">По рейтингу</span>
                             <br>
