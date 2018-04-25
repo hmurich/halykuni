@@ -204,19 +204,36 @@
                 </div> <!-- End Column -->
             </div><!-- Content -->
         </div>
-
         <div class="col-md-12">
-            <div class="contact bg-box-shadow">
-                <div class="contact-logo text-center">
-                    <p>Адрес учреждения</p>
+            <div class="contact bg-box-shadow" style="padding-top: 30px; padding-bottom: 0;">
+                <div class="contact-form" style="padding-bottom: 0;border-bottom: 0;">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="/front/images/director.jpg" style="margin:10px;">
+                        </div>
+                        <div class="col-md-9">
+                            <h4 style="">Директор - Иванов Иван Иванович - 1967 г.р.</h4>
+                            <p >
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-form">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="contact bg-box-shadow" style="padding-top: 30px; padding-bottom: 0;">
+                <div class="contact-logo text-center" style="margin-bottom: 10px;">
+                    Адрес учреждения
+                </div>
+                <div class="contact-form" style="padding-bottom: 0;border-bottom: 0;">
                     <div class="mm-google-map bg-box-shadow common-border">
                         <div id="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A758d2c5a33155753f61f8263e6a39e84fd9952575915a6209f307670a228a75f&amp;width=100%25&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script></div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 
