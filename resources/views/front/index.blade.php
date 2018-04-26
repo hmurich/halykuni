@@ -98,8 +98,6 @@
                                                 </div>
                                             </div><!-- End Media -->
                                         </li>
-
-
                                     </ul>
                                 </div>
                             </div>

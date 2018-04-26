@@ -3,28 +3,178 @@
 @section('title', $title)
 
 @section('content')
-<div class="col-12">
-    <h4>Выберите тип отчета</h4>
-    <select>
-        <option>О работе местного исполнительного органа по внутреннему контролю за качеством оказания государственных услуг</option>
-        <option>Сводный отчет о проделанной работе</option>
-    </select>
+<div class="row">
+    <div class="col-md-12">
+        <form action="#filter" method="get" class="card">
+            <div class="card-header">
+                <h3 class="card-title">{{ $title }}</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Выберите период</label>
+                            <select class="form-control">
+                                <option>За все года</option>
+                                <option>2017</option>
+                                <option>2016</option>
+                                <option>2015</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Выберите квартал</label>
+                            <select class="form-control">
+                                <option>За все кварталы</option>
+                                <option>1 квартал</option>
+                                <option>2 квартал</option>
+                                <option>3 квартал</option>
+                                <option>4 квартал</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label class="form-label">Месяц</label>
+                            <select class="form-control">
+                                <option>Все месяцы(в зависимости от квартала)</option>
+                                <option>Январь</option>
+                                <option>Ферваль</option>
+                                <option>Март</option>
+                                <option>Апрель</option>
+                                <option>Май</option>
+                                <option>Июнь</option>
+                                <option>Июль</option>
+                                <option>Август</option>
+                                <option>Сентябрь</option>
+                                <option>Октябрь</option>
+                                <option>Ноябрь</option>
+                                <option>Декабрь</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Выберите Департамент</label>
+                            <select class="form-control">
+                                <option>Сводный</option>
+                                <option>Образования</option>
+                                <option>Образования</option>
+                                <option>Здравоохранения</option>
+                                <option>Внутренних дел</option>
+                                <option>Жилья</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Выберите Организацию</label>
+                            <select class="form-control">
+                                <option>Все (в зависимости от департамента)</option>
+                                <option>Школа №22</option>
+                                <option>Школа №31</option>
+                                <option>ЕНУ</option>
+                                <option>Поликлинника №7</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Тип</label>
+                            <select class="form-control">
+                                <option>Общий</option>
+                                <option>Информация о результатах контрольных мероприятий</option>
+                                <option>Информация о результатах мониторинга качества оказания государственных услуг</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Пункт</label>
+                            <select class="form-control">
+                                <option>Общий (в зависимости от Типа)</option>
+                                <option>Количество проведенных контрольных мероприятий, всего из них:</option>
+                                <option>Количество объектов контрольных мероприятий, всего из них:</option>
+                                <option>Количество выявленных нарушений, всего, из них:</option>
+                                <option>Количество нарушений, по итогам которых приняты меры по восстановлению нарушенных прав услугополучателей:</option>
+                                <option>Количество лиц, восстановивших нарушенные права при получении государственных услуг:</option>
+                                <option>Количество выявленных в ходе контрольных мероприятий нарушений сроков рассмотрения жалоб:</option>
+                                <option>Количество наложенных дисциплинарных взысканий по итогам контрольных мероприятий, всегоиз них:</option>
+                                <option>Количество лиц, привлеченных к дисциплинарной ответственности, всего из них:</option>
+                                <option>Количество выработанных рекомендаций по итогам контрольных мероприятий, всего из них:</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
 
-    <h4>Выберите период</h4>
-    <select>
-        <option>2017-2018</option>
-        <option>2016-2017</option>
-        <option>2015-2016</option>
-    </select>
-
-<h4>Выберите сферу отношений</h4>
-    <select>
-        <option>Образование</option>
-        <option>Медицина</option>
-    </select>
-
-<br><br>
-    <button class="btn btn-success">Отобразить</button>
+            </div>
+            <div class="card-footer text-right">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="?type=diagram"  class="btn btn-primary btn-block">Отобразить в виде диаграммы</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="?type=table"  class="btn btn-primary btn-block">Отобразить в виде таблицы</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="?type=map"  class="btn btn-primary btn-block">Отобразить в виде карты</a>
+                    </div>
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+@if ($request->has('type') && $request->get('type') == 'diagram')
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Отчетный период за 1 квартал 2017 года.</h3>
+                </div>
+                <div class="card-body">
+                    <div id="container" style="width: 100%; height: 400px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+@elseif ($request->has('type') && $request->get('type') == 'map')
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Отчетный период за 1 квартал 2017 года.</h3>
+                </div>
+                <div class="card-body">
+                    <div id='map' style="width: 100%; height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+@elseif ($request->has('type') && $request->get('type') == 'table')
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Отчетный период за 1 квартал 2017 года.</h3>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        @include('admin.report.sample.__include.table')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endif
+<!--
+    <h4></h4>
+    <button class="btn btn-success"></button>
 
     <div class="page-header">
         <h1 class="page-title">
@@ -57,7 +207,8 @@
 </div>
 
 <div id='map' style="width: 100%; height: 300px;"></div>
-<script src="/admin/js/block/dialog_edit.js"></script>
+
+-->
 @endsection
 
 
@@ -67,7 +218,7 @@
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
-
+    <script src="/admin/js/block/dialog_edit.js"></script>
     <script>
         Highcharts.chart('container', {
             chart: {
@@ -77,7 +228,7 @@
                text: 'Отчет о работе местного исполнительного органа по внутреннему контролю за качеством оказания государственных услуг'
             },
             xAxis: {
-                categories: ['1 квартал', '2 квартал', '3 квартал', '4 квартал']
+                categories: ['Январь', 'Февраль', 'Март']
             },
             credits: {
                 enabled: false

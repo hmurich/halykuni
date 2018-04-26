@@ -7,11 +7,12 @@ use Illuminate\Http\Response;
 
 class SampleController extends Controller{
 
-    function getIndex(){
+    function getIndex(Request $request){
         $ar = [];
-        $ar['title'] = 'Качество оказания гос. услуг';
+        $ar['title'] = 'Контроль за качеством оказания государственных услуг';
+        $ar['request'] = $request;
 
         return view('admin.report.sample.index', $ar);
     }
-    
+
 }
