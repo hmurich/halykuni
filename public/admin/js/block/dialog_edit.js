@@ -27,7 +27,6 @@ requirejs(['jquery'], function( $ ) {
                 jQuery("#lat").val('71.44592914');
                 changeMap(false);
             }
-            //
         }
 
         $('#'+modal_name).modal('show');

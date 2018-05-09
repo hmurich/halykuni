@@ -58,7 +58,6 @@
                                                         </p>
                                                         <a href="about">Подробнее</a>
                                                     </div>
-
                                                 </div>
                                             </div><!-- End Media -->
                                         </li>

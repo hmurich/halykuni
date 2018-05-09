@@ -3366,38 +3366,38 @@ a.icon-right {
 #single-post-slider .owl-prev {height: 70px;width: 40px;}
 
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-  background-repeat: repeat-x;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image:      -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background-image:         linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
 }
 .carousel-control.right {
-  right: 0;
-  left: auto;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-  background-image:      -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
-  background-image:         linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-  background-repeat: repeat-x;
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image:      -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background-image:         linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
 }
 .elements.load-more {line-height: 50px;padding: 0;}
 .post-author-left img {margin: 0 auto;}
 
 #advicer{
-  position:absolute;
-  width:400px;
-  height:100%;
-  right: 0;
-  background: white;
-  z-index: 2000;
-  -webkit-box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
-  box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
-  display:none;
-  padding:20px;
+    position:absolute;
+    width:400px;
+    height:100%;
+    right: 0;
+    background: white;
+    z-index: 2000;
+    -webkit-box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
+    box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
+    display:none;
+    padding:20px;
 }
 .map-description{
     font-size: 12px;
@@ -3420,7 +3420,7 @@ a.icon-right {
     margin-right: 5px;
 }
 .circle-1{
-    background: #b3b3b3;
+    background: #ff000c;
 }
 .circle-2{
     background: #e6761b;

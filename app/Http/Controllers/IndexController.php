@@ -12,7 +12,7 @@ class IndexController extends Controller{
         $ar = array();
         $ar['title'] = 'Главная';
 
-        return view('front.index', $ar);
+        return view('new.page.index', $ar);
     }
 
     function getAjaxOrg(){
@@ -31,7 +31,7 @@ class IndexController extends Controller{
         $ar = [];
         $ar['title'] = 'Об организации';
 
-        return view('front.about', $ar);
+        return view('new.page.about', $ar);
     }
 
     function getBudzhet(){
