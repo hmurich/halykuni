@@ -9,6 +9,7 @@
         <meta name="robots" content="index, follow"/>
         <meta name="keywords" content=""/>
         <meta name="description" content=""/>
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <!--=============== css  ===============-->
         <link type="text/css" rel="stylesheet" href="/new/css/reset.css">
         <link type="text/css" rel="stylesheet" href="/new/css/plugins.css">
@@ -43,6 +44,7 @@
 
             @include('new.__include.footer')
             @include('new.__include.register_form')
+            @include('new.__include.advicer')
 
             <a class="to-top"><i class="fa fa-angle-up"></i></a>
         </div>
@@ -51,6 +53,15 @@
         <script type="text/javascript" src="/new/js/jquery.min.js"></script>
         <script type="text/javascript" src="/new/js/plugins.js"></script>
         <script type="text/javascript" src="/new/js/scripts.js"></script>
+        <script>
+            function open_advicer(){
+                $( ".advicer" ).toggle( "slide" );
+            }
+
+            function show_inses(){
+                $( "#inses" ).toggle( "slide" );
+            }
+        </script>
         @section('js_block')
         @show
     </body>

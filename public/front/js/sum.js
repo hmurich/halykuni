@@ -201,16 +201,17 @@ function init()
 
     }
 
-    getPlacemark();
+
 
     $('.js_change_map').change(function(){
         console.log('js_change_map');
-        getPlacemark();
+        getSumm();
     });
 
     $('.js_show_map_summ').click(function(){
         getSumm();
     });
 
+    getSumm();
     console.log(myMap.controls);
 }

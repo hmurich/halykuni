@@ -1,7 +1,11 @@
 <?php
 
 
-Route::get('/', 'IndexController@getIndex');
+Route::get('/', 'IndexController@getSum');
+Route::get('map', 'IndexController@getMap');
+Route::get('sum', 'IndexController@getSum');
+Route::get('sum-detail', 'IndexController@getSumDetail');
+
 Route::post('org-list', 'IndexController@getAjaxOrg');
 Route::get('about', 'IndexController@getAbout');
 Route::get('otzyvy', 'IndexController@getOtzyvy');

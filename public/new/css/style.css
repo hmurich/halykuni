@@ -54,7 +54,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-weight: 400;
-	font-size: 13px;
+	font-size: 16px;
 	height:100%;
 	text-align:center;
 	background:#2F3B59;
@@ -66,7 +66,7 @@ body{
 @viewport {width: device-width;}
 /*--------------Typography--------------------------------------*/
 p {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 24px;
     padding-bottom: 10px;
 	font-weight:500;
@@ -337,11 +337,11 @@ blockquote p {
 .logo-holder {
 	float:left;
 	position:relative;
-	top:25px;
-	height:30px;
+	top:5px;
+	height:70px;
 }
 .logo-holder img {
-	height:100%;
+	height: 100%;
 	width:auto;
 }
 .add-list {
@@ -440,7 +440,7 @@ blockquote p {
 	width:100%;
 	padding: 5px 10px 6px;
     color: #666;
-    font-size: 13px;
+    font-size: 14px;
     border-radius: 2px;
 	min-height:20px;
 	line-height:20px;
@@ -639,7 +639,7 @@ blockquote p {
 .nav-holder nav li a {
 	float: left;
 	padding: 10px;
-    font-size: 13px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 800;
     text-transform: none;
@@ -1458,6 +1458,7 @@ section.gray-section .section-separator {
 	width:100%;
 	height:auto;
 	z-index:1;
+	    height: 250px;
 }
 .card-listing  .geodir-category-img .overlay {
 	opacity:0.1;
@@ -2948,6 +2949,7 @@ article .list-single-main-item {
 }
 .reviews-comments-item-text .listing-rating {
 	float:right;
+	    display: none;
 }
 .reviews-comments-item-text .listing-rating i {
 	float:left;
@@ -2955,7 +2957,7 @@ article .list-single-main-item {
 	font-size:12px;
 }
 .reviews-comments-item {
-	padding:0 0 30px 110px;
+	padding:0;
 	position:relative;
 	float:left;
 	margin-bottom:40px;
@@ -3176,7 +3178,7 @@ article .list-single-main-item {
 	position:relative;
 	font-weight:700;
 	color:#888DA0;
-	font-size:13px;
+	font-size:17px;
 }
 .scroll-nav-wrapper .scroll-nav li a:before {
 	content:'';
@@ -6379,4 +6381,36 @@ header.main-header {
 	-webkit-background-size:cover;
 	background-position:center;
 }
+}
+/*ADVICER*/
+.advicer{
+  position:fixed;
+  width:400px;
+  height:100%;
+  right: 0;
+  background: white;
+  z-index: 2000;
+  -webkit-box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
+  box-shadow: -10px 7px 55px 1px rgba(0,0,0,0.75);
+  display:none;
+  padding:20px;
+}
+.advicer #inses{
+	font-size: 20px;
+}
+.advicer #inses a{
+	color:blue;
+}
+
+.map-description {
+    font-size: 16px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #b9b9b9;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 15px;
+    font-weight: 200;
 }

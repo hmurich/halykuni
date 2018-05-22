@@ -1,38 +1,31 @@
-<!--register form -->
 <div class="main-register-wrap modal">
     <div class="main-overlay"></div>
     <div class="main-register-holder">
         <div class="main-register fl-wrap">
             <div class="close-reg"><i class="fa fa-times"></i></div>
-            <h3>Sign In <span>City<strong>Book</strong></span></h3>
-            <div class="soc-log fl-wrap">
-                <p>For faster login or register use your social account.</p>
-                <a href="#" class="facebook-log"><i class="fa fa-facebook-official"></i>Log in with Facebook</a>
-                <a href="#" class="twitter-log"><i class="fa fa-twitter"></i> Log in with Twitter</a>
-            </div>
-            <div class="log-separator fl-wrap"><span>or</span></div>
+            <h3>Зарегистрироваться на <span>Елiм<strong>ай</strong></span></h3>
             <div id="tabs-container">
                 <ul class="tabs-menu">
-                    <li class="current"><a href="#tab-1">Login</a></li>
-                    <li><a href="#tab-2">Register</a></li>
+                    <li class="current"><a href="#tab-1">Войти</a></li>
+                    <li><a href="#tab-2">Регистрация с ЭЦП</a></li>
                 </ul>
                 <div class="tab">
                     <div id="tab-1" class="tab-content">
                         <div class="custom-form">
                             <form method="post"  name="registerform">
-                                <label>Username or Email Address * </label>
+                                <label>Ваша почта * </label>
                                 <input name="email" type="text"   onClick="this.select()" value="">
-                                <label >Password * </label>
+                                <label >Пароль * </label>
                                 <input name="password" type="password"   onClick="this.select()" value="" >
-                                <button type="submit"  class="log-submit-btn"><span>Log In</span></button>
+                                <button type="submit"  class="log-submit-btn"><span>Войти</span></button>
                                 <div class="clearfix"></div>
                                 <div class="filter-tags">
                                     <input id="check-a" type="checkbox" name="check">
-                                    <label for="check-a">Remember me</label>
+                                    <label for="check-a">Запомнить меня</label>
                                 </div>
                             </form>
                             <div class="lost_password">
-                                <a href="#">Lost Your Password?</a>
+                                <a href="#">Забыли пароль?</a>
                             </div>
                         </div>
                     </div>
@@ -40,22 +33,25 @@
                         <div id="tab-2" class="tab-content">
                             <div class="custom-form">
                                 <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
-                                    <label >First Name * </label>
+                                    <input name="email" type="file"  class="form-control" onClick="this.select()" value="">
+                                    <label >Выберите ЭЦП *</label>
+                                    <label >Ваше имя * </label>
                                     <input name="name" type="text"   onClick="this.select()" value="">
-                                    <label>Second Name *</label>
+                                    <label>Ваша фамилия *</label>
                                     <input name="name2" type="text"  onClick="this.select()" value="">
-                                    <label>Email Address *</label>
+                                    <label>Ваша эл. почта *</label>
                                     <input name="email" type="text"  onClick="this.select()" value="">
-                                    <label >Password *</label>
+                                    <label >Ваш пароль *</label>
                                     <input name="password" type="password"   onClick="this.select()" value="" >
-                                    <button type="submit"     class="log-submit-btn"  ><span>Register</span></button>
+                                    <button type="submit"     class="log-submit-btn"  ><span>Регистрация</span></button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </div>
 <!--register form end -->
+<a class="to-top"><i class="fa fa-angle-up"></i></a>
+</div>

@@ -15,6 +15,27 @@ class IndexController extends Controller{
         return view('new.page.index', $ar);
     }
 
+    function getMap(){
+        $ar = array();
+        $ar['title'] = 'Главная';
+
+        return view('new.page.map', $ar);
+    }
+
+    function getSum(){
+        $ar = array();
+        $ar['title'] = 'Главная';
+
+        return view('new.page.sum', $ar);
+    }
+
+    function getSumDetail(){
+        $ar = array();
+        $ar['title'] = 'Главная';
+
+        return view('new.page.sum_detail', $ar);
+    }
+
     function getAjaxOrg(){
         $ar_id = Organization::pluck('id')->toArray();
 
