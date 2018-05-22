@@ -79,7 +79,7 @@
                            Основным исполнителем была выбрана компания <b>"ДолгоСтрой Астаны".</b><br/>
                            Сумма выделяемая на сторительство - <b>118 910 800 тг.</b>
                        </p>
-
+                       <iframe src='https://onedrive.live.com/embed?cid=1F9F9DB9A1BA0E2E&resid=1F9F9DB9A1BA0E2E%21217&authkey=AP69XUyCXD4EnuY&em=2&wdStartOn=1' width='700px' height='500px' frameborder='0'>Это внедренный файл <a target='_blank' href='https://office.com'>Microsoft Office</a> на платформе <a target='_blank' href='https://office.com/webapps'>Office Online</a>.</iframe>
                    </div>
                    <div class="list-single-main-item fl-wrap" id="sec4">
                        <div class="list-single-main-item-title fl-wrap">

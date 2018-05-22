@@ -5,22 +5,6 @@
             <!--<a href="."><img src="/new/images/logo_full.png" alt=""></a>-->
             Интерактивная карта <span style="color:#ebbe06">общественного контроля</span>
         </div>
-        <div class="header-search vis-header-search">
-            <div class="header-search-input-item">
-                <input type="text" placeholder="Поиск" value=""/>
-            </div>
-            <div class="header-search-select-item">
-                <select data-placeholder="All Categories" class="chosen-select" >
-                    <option>Все категории</option>
-                    <option>Образование</option>
-                    <option>Медицина</option>
-                    <option>Поликлинники</option>
-                    <option>Акиматы</option>
-                    <option>Университеты</option>
-                </select>
-            </div>
-            <a href='/map' class="header-search-button">Искать</a>
-        </div>
         <div class="show-search-button"><i class="fa fa-search"></i> <span>Поиск</span></div>
         <a href="#help" class="add-list" onClick="open_advicer();">Консультация <span><i class="fa fa-question-circle"></i></span></a>
         <div class="show-reg-form modal-open"><i class="fa fa-sign-in"></i>Войти</div>

@@ -108,7 +108,7 @@
                        <h3><a href="/sum-detail">Строительство школы № 84</a></h3>
                        <p></p>
                        <div class="geodir-category-options fl-wrap">
-                           <span><i class="fa fa-dollar"></i> 118 910 800 тг.</span>
+                           <span> 118 910 800 тг.</span>
                            <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>ул. Сейфулина 78, Астана</a></div>
                        </div>
                    </div>
@@ -128,7 +128,7 @@
                        <h3><a href="/sum-detail">Ремонт школы № 31, Кенесары 33,  Астана</a></h3>
                        <p></p>
                        <div class="geodir-category-options fl-wrap">
-                           <span><i class="fa fa-dollar"></i> 4 245 311 тг.</span>
+                           <span> 4 245 311 тг.</span>
                            <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Республики проспект, 43, Астана</a></div>
                        </div>
                    </div>
@@ -147,7 +147,7 @@
                        <h3><a href="/sum-detail">Участок кенесары с пер. Победы до пер. Республики</a></h3>
                        <p></p>
                        <div class="geodir-category-options fl-wrap">
-                           <span><i class="fa fa-dollar"></i> 65 005 458 тг.</span>
+                           <span> 65 005 458 тг.</span>
                            <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>ул. Кенесары, с пер. Победы до пер. Республики</a></div>
                        </div>
                    </div>
@@ -166,7 +166,7 @@
                        <h3><a href="/sum-detail">Ремонт городской больницы № 1</a></h3>
                        <p></p>
                        <div class="geodir-category-options fl-wrap">
-                           <span><i class="fa fa-dollar"></i> 15 120 111 тг.</span>
+                           <span> 15 120 111 тг.</span>
                            <div class="geodir-category-location"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>ул.Рақымжан Қошқарбаев 66,</a></div>
                        </div>
                    </div>
