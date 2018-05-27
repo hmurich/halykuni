@@ -69,7 +69,7 @@ function init()
                     iconContent: random_summ + " тг.",
                     balloonContentBody: [
                         '<address>',
-                        '<strong>Ремонт школы №22</strong>',
+                        '<strong>Ремонт школы № 22</strong>',
                         '<br/>',
                         'Подрядчик: ТОО ООП',
                         '<br/>',

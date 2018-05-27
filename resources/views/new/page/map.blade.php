@@ -196,7 +196,7 @@
 
 @section('js_block')
     @parent
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full" type="text/javascript"></script>
     <script type="text/javascript" src="{{ URL::asset('front/js/map.js') }}" ></script>
 
 @endsection

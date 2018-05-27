@@ -7,8 +7,7 @@ $.ajaxSetup({
 var myMap;
 ymaps.ready(init);
 
-function init()
-{
+function init(){
     lng = jQuery("#lng").val();
     lat = jQuery("#lat").val();
 
@@ -138,7 +137,7 @@ function init()
                     iconContent: random_summ + " тг.",
                     balloonContentBody: [
                         '<address>',
-                        '<strong>Ремонт школы №22</strong>',
+                        '<strong>Ремонт дороги </strong>',
                         '<br/>',
                         'Подрядчик: ТОО ООП',
                         '<br/>',
@@ -208,10 +207,32 @@ function init()
         getSumm();
     });
 
-    $('.js_show_map_summ').click(function(){
+    $('.js_change_map').change(function(){
+        console.log('js_change_map');
         getSumm();
     });
 
     getSumm();
     console.log(myMap.controls);
+}
+
+ $('.category_selected').change(function(){
+        var selected_category = $(".category_selected").val();
+        var roads_arr = ["Реконструкция дорог", "Строительство дорог"];
+        var schools_arr = ["Ремонт школ", "Строительство школ", "Питание", "Учебные принадлежности"];
+        var medicine_arr = ["Закупка препаратов", "Ремонт поликлинник", "Строительство поликлинник"];
+
+        switch(selected_category){
+            case '1': load_subcats(roads_arr);break;
+            case '2': load_subcats(schools_arr);break;
+            case '3': load_subcats(medicine_arr);break;
+        }
+    });
+
+function load_subcats(options){
+    $('.subcategory_selected').children('option').remove();   
+    options.forEach(function(item, i) {
+         $('.subcategory_selected').append('<option>'+item+'</option>');
+    });
+    $('.subcategory_selected').niceSelect('update');
 }

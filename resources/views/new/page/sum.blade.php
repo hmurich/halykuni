@@ -32,33 +32,28 @@
            <!-- listsearch-input-wrap  -->
            <div class="listsearch-input-wrap fl-wrap">
                <div class="listsearch-input-item">
-                   <select data-placeholder="Категория" class="chosen-select js_change_map">
-                       <option>Все обьекты</option>
-                       <option>Ремонт школ № 31</option>
-                       <option>Ремонт дороги, Кенесары</option>
-                       <option>Ремонт больниц № 1</option>
-                       <option>Строительство школы № 84</option>
+                <label>Выберите Ваш город:</label>
+                   <select data-placeholder="Город" class="chosen-select js_change_map">
+                       <option>г. Астана</option>
+                       <option>г. Алматы</option>
+                       <option>г. Актобе</option>
+                       <option>г. Актау</option>
+                       <option>г. Кокшетау</option>
                    </select>
                </div>
                <div class="listsearch-input-item">
-                   <select data-placeholder="Категория" class="chosen-select js_change_map">
-                       <option>Все категории</option>
-                       <option>Ремонт школ</option>
-                       <option>Ремонт дорог</option>
-                       <option>Ремонт больниц</option>
-                       <option>Строительство школ</option>
-                       <option>Строительство дорог</option>
-                       <option>Строительство больниц</option>
+                <label>Выберите категорию:</label>
+                   <select data-placeholder="Категория" class="chosen-select category_selected">
+                       <option value="1">Дороги</option>
+                       <option value="2">Школы</option>
+                       <option value="3">Больницы</option>
                    </select>
                </div>
-               <div class="listsearch-input-item">
-                   <select data-placeholder="Область" class="chosen-select js_change_map" >
-                       <option>Все области</option>
-                       <option>Акмолинская</option>
-                       <option>Алматинская</option>
-                       <option>Карагандинская</option>
-                       <option>Жамбыльская</option>
-                       <option>Южно-Казахстанская</option>
+               <div class="listsearch-input-item" id="sub_category_for_categories">
+                  <label>&nbsp;</label>
+                   <select data-placeholder="Подкатегория" class="chosen-select subcategory_selected" id="subcats_select">
+                      <option>Реконструкция дорог</option>
+                      <option>Строительство дорог</option>
                    </select>
                </div>
                <div class="listsearch-input-text" id="autocomplete-container">
@@ -186,7 +181,7 @@
 
 @section('js_block')
     @parent
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;load=package.full" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=package.full" type="text/javascript"></script>
     <script type="text/javascript" src="{{ URL::asset('front/js/sum.js') }}" ></script>
 
 @endsection
